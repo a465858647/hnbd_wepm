@@ -12,6 +12,7 @@
 		<script src="JS/hnbd_3d_toolBox.js"></script>
 		<script src="http://api.tianditu.gov.cn/cdn/plugins/cesium/cesiumTdt.js"></script>
 		<link rel="stylesheet" href="/node_modules/Cesium/Widgets/widgets.css" />
+		<script src="/JS/XbsjEarth.js"></script>
 		<!-- <script src="172.16.100.181:7080"></script> -->
 		<!--  /*                    导航栏                             */ -->
 		<script src="/node_modules/cesium-navigation/navigation.js"></script>
@@ -38,7 +39,7 @@
 			}
 		</style>
 	</head>
-	<body >
+	<body>
 		<!--  /*                    模态框-------本地服务                             */ -->
 		<div class="modal fade" tabindex="-1" role="dialog" id="mylocalServer">
 			<div class="modal-dialog" role="document">
@@ -210,12 +211,15 @@
 								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
-										>图层<span class="caret"></span
+										>影像<span class="caret"></span
 									></a>
 									<ul class="dropdown-menu" id="imageLayer">
-										<li><a href="#" id="esriIamge">Esri ArcGIS影像</a></li>
-										<li><a href="#" id="googleIamge">Google Earth影像</a></li>
-										<li><a href="#" id="tiandituImage">天地图影像</a></li>
+										<li><a href="#" id="gaodeIamge">高德</a></li>
+										<li><a href="#" id="googleIamge">谷歌</a></li>
+										<!-- <li><a href="#" id="baiduIamge">百度</a></li> -->
+										<li role="separator" class="divider"></li>
+										<li><a href="#" id="tdtImageLable">天地图影像注记</a></li>
+										<!-- <li><a href="#" id="tdtStreetLable">天地图街道注记</a></li> -->
 										<li role="separator" class="divider"></li>
 										<li><a href="#" id="WorldTerrain">世界地形</a></li>
 										<li><a href="#" id="tiandituTerrain">天地图地形</a></li>

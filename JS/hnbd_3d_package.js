@@ -61,138 +61,12 @@ window.onload = function () {
 			tilingScheme: new Cesium.WebMercatorTilingScheme(),
 			minimumLevel: 1,
 			maximumLevel: 20,
-			credit: 'http://www.bjxbsj.cn',
+			credit: 'http://www.beidou-hn.com/',
 		}),
 		{ show: true }
 	);
 	viewer.imageryLayers.add(guge);
-	// // // Create an initial camera view创建相机初始位置和朝向
-	// var initialPosition = new Cesium.Cartesian3.fromDegrees(114.14774, 34.67566, 13170);
-	// var initialOrientation = new Cesium.HeadingPitchRoll.fromDegrees(350.71, -45.19, 0);
-	// var homeCameraView = {
-	// 	destination: initialPosition,
-	// 	orientation: {
-	// 		heading: initialOrientation.heading,
-	// 		pitch: initialOrientation.pitch,
-	// 		roll: initialOrientation.roll,
-	// 	},
-	// };
-	// // // Set the initial view设置初始视角
-	// viewer.scene.camera.setView(homeCameraView);
-	// // // Add some camera flight animation options添加飞行动画
-	// homeCameraView.duration = 2.0;
-	// homeCameraView.maximumHeight = 2000;
-	// homeCameraView.pitchAdjustHeight = 2000;
-	// homeCameraView.endTransform = Cesium.Matrix4.IDENTITY;
-	// // Override the default home button覆盖原有home菜单事件
-	// viewer.homeButton.viewModel.command.beforeExecute.addEventListener(function (e) {
-	// 	e.cancel = true;
-	// 	viewer.scene.camera.flyTo(homeCameraView);
-	// });
-	// /*
-	//                   添加KML文件
-	// */
-	// var kmlOptions = {
-	// 	camera: viewer.scene.camera,
-	// 	canvas: viewer.scene.canvas,
-	// 	clampToGround: true, //控制数据是否贴地
-	// };
-	// var geocachePromise = Cesium.KmlDataSource.load('/Source/xuandian.kml', kmlOptions);
-	// geocachePromise.then(function (dataSource) {
-	// 	viewer.dataSources.add(dataSource);
-	// 	// Get the array of entities
-	// 	var geocacheEntities = dataSource.entities.values;
 
-	// 	for (var i = 0; i < geocacheEntities.length; i++) {
-	// 		var entity = geocacheEntities[i];
-	// 		if (Cesium.defined(entity.billboard)) {
-	// 			console.log('+' + 1);
-	// 			// Adjust the vertical origin so pins sit on terrain调整垂直方向的原点,保证图标里的针尖对着地表位置
-	// 			entity.billboard.verticalOrigin = Cesium.VerticalOrigin.BOTTOM;
-	// 			// Disable the labels to reduce clutter去掉文字显示
-	// 			//entity.label = undefined;
-	// 			// Add distance display condition设置可见距离
-	// 			entity.billboard.distanceDisplayCondition = new Cesium.DistanceDisplayCondition(10.0, 20000.0);
-	// 			// Compute latitude and longitude in degrees
-	// 			var cartographicPosition = Cesium.Cartographic.fromCartesian(entity.position.getValue(Cesium.JulianDate.now()));
-	// 			var latitude = Cesium.Math.toDegrees(cartographicPosition.latitude);
-	// 			var longitude = Cesium.Math.toDegrees(cartographicPosition.longitude);
-	// 			// Modify description
-	// 			var description =
-	// 				'<table class="cesium-infoBox-defaultTable cesium-infoBox-defaultTable-lighter"><tbody>' +
-	// 				'<tr><th>' +
-	// 				'经度' +
-	// 				'</th><td>' +
-	// 				longitude.toFixed(5) +
-	// 				'</td></tr>' +
-	// 				'<tr><th>' +
-	// 				'纬度' +
-	// 				'</th><td>' +
-	// 				latitude.toFixed(5) +
-	// 				'</td></tr>' +
-	// 				'</tbody></table>';
-	// 			entity.description = description;
-	// 		}
-	// 	}
-	// });
-	// /*
-	//                   添加Geojson文件
-	// */
-	// /*
-	// var geojsonOptions = {
-	// 	clampToGround: true,
-	// };
-	// var neighborhoodsPromise = Cesium.GeoJsonDataSource.load('/Source/sheng.json', geojsonOptions);
-	// var neighborhoods;
-	// neighborhoodsPromise.then(function (dataSource) {
-	// 	viewer.dataSources.add(dataSource);
-	// 	neighborhoods = dataSource.entities;
-
-	// 	// Get the array of entities
-	// 	var neighborhoodEntities = dataSource.entities.values;
-	// 	console.log(neighborhoodEntities.length);
-	// 	for (var i = 0; i < neighborhoodEntities.length; i++) {
-	// 		var entity = neighborhoodEntities[i];
-
-	// 		if (Cesium.defined(entity.polygon)) {
-	// 			entity.name = entity.properties.name;
-
-	// 			entity.polygon.material = Cesium.Color.fromRandom({
-	// 				red: 0.1,
-	// 				maximumGreen: 0.5,
-	// 				minimumBlue: 0.5,
-	// 				alpha: 0.6,
-	// 			});
-	// 			// Tells the polygon to color the terrain. ClassificationType.CESIUM_3D_TILE will color the 3D tileset, and ClassificationType.BOTH will color both the 3d tiles and terrain (BOTH is the default)
-	// 			entity.polygon.classificationType = Cesium.ClassificationType.TERRAIN;
-
-	// 			// Generate Polygon center
-	// 			var polyPositions = entity.polygon.hierarchy.getValue(Cesium.JulianDate.now()).positions;
-	// 			var polyCenter = Cesium.BoundingSphere.fromPoints(polyPositions).center;
-	// 			polyCenter = Cesium.Ellipsoid.WGS84.scaleToGeodeticSurface(polyCenter);
-	// 			entity.position = polyCenter;
-	// 			// Generate labels
-	// 			entity.label = {
-	// 				text: entity.name,
-	// 				showBackground: true,
-	// 				scale: 0.6,
-	// 				horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
-	// 				verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-	// 				//distanceDisplayCondition: new Cesium.DistanceDisplayCondition(10.0, 8000.0),
-	// 				disableDepthTestDistance: 100.0,
-	// 			};
-	// 		}
-	// 	}
-	// }); */
-
-	// /*
-	//                    从CZML中载入无人机轨迹
-	// */
-	// // var dronePromise = Cesium.CzmlDsataSource.load('../Source/sampleFlight.czml');
-	// // dronePromise.then(function (dataSource) {
-	// // 	viewer.dataSources.add(dataSource);
-	// // });
-	// /*
 	//                   添加实体
 	// */
 	var billboard = viewer.entities.add({
@@ -201,69 +75,6 @@ window.onload = function () {
 		position: Cesium.Cartesian3.fromDegrees(110, 40, 0),
 		billboard: { image: '../img/logo/logo.png', width: 32, height: 32 },
 	});
-
-	// /*
-	//         点击事件,log所有属性
-	// */
-
-	// /* 	var scene = viewer.scene;
-	// viewer.screenSpaceEventHandler.setInputAction(function (movement) {
-	// 	var feature = scene.pick(movement.position);
-	// 	if (feature instanceof Cesium.Cesium3DTileFeature) {
-	// 		var propertyNames = feature.getPropertyNames();
-	// 		var length = propertyNames.length;
-	// 		for (var i = 0; i < length; ++i) {
-	// 			var propertyName = propertyNames[i];
-	// 			console.log(propertyName + ':' + feature.getProperty(propertyName));
-	// 		}
-	// 	}
-	// }, this.Cesium.ScreenSpaceEventType.LEFT_CLICK); */
-	// /*
-	//         点击事件,弹出气泡
-	// */
-	// /* 	var info = this.document.getElementById('info');
-	// function showInfo(entity) {
-	// 	info.innerHTML = entity.name + '<br>' + entity.description;
-	// 	info.style.display = 'block';
-	// }
-	// function hideInfo() {
-	// 	info.style.display = 'none';
-	// }
-	// var pickPosition;
-	// viewer.screenSpaceEventHandler.setInputAction(function (movement) {
-	// 	var picked = scene.pick(movement.position);
-	// 	if (picked) {
-	// 		if (picked.id == billboard) {
-	// 			pickPosition = scene.pickPosition(movement.position);
-	// 			showInfo(billboard);
-	// 		} else {
-	// 			hideInfo();
-	// 		}
-	// 	}
-	// }, this.Cesium.ScreenSpaceEventType.LEFT_CLICK);
-	// var removeChanged = scene.postRender.addEventListener(function (percentage) {
-	// 	//转换到屏幕坐标
-	// 	if (pickPosition && info.style.display == 'block') {
-	// 		var winpos = scene.cartesianToCanvasCoordinates(pickPosition); //获取屏幕坐标
-	// 		if (winpos) {
-	// 			info.style.left = (winpos.x - 100 / 2).toFixed(0) + 'px';
-	// 			info.style.top = (winpos.y - 100).toFixed(0) + 'px';
-	// 		}
-	// 	}
-	// }); */
-	// //经纬度高度一起调整，仅限原数据中root.transform使用这种方法计算的
-	// /*
-	//         tileset.readyPromise.then(function (argument) {
-	// 				var position = Cesium.Cartesian3.fromDegrees(114.12468, 34.75954, 200);
-	// 				var mat = Cesium.Transforms.eastNorthUpToFixedFrame(position);
-	// 				tileset._root.transforms = mat;
-	// 				console.log('333333' + tileset._root.transforms);
-	//       });
-	//       */
-	// //
-	// //
-	// //
-	// //
 	/*            工具管理             */
 	$(function () {
 		$('#toolBox #measureDistance').on('click', function (handler) {
@@ -339,7 +150,7 @@ window.onload = function () {
 	/*            图层管理             */
 	$(function () {
 		$('#imageLayer li').on('click', function () {
-			if (/Google Earth/gi.test($(this).html())) {
+			if (/googleIamge/gi.test($(this).html())) {
 				viewer.imageryLayers.removeAll();
 				var guge = new Cesium.ImageryLayer(
 					new Cesium.UrlTemplateImageryProvider({
@@ -347,23 +158,42 @@ window.onload = function () {
 						tilingScheme: new Cesium.WebMercatorTilingScheme(),
 						minimumLevel: 1,
 						maximumLevel: 20,
-						credit: 'http://www.bjxbsj.cn',
+						credit: 'http://www.beidou-hn.com/',
 					}),
 					{ show: true }
 				);
 				viewer.imageryLayers.add(guge);
 			}
-			if (/Esri ArcGIS/gi.test($(this).html())) {
+			if (/gaodeIamge/gi.test($(this).html())) {
 				viewer.imageryLayers.removeAll();
 				var guge = new Cesium.ImageryLayer(
-					new Cesium.ArcGisMapServerImageryProvider({
-						url: '//services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer',
+					new Cesium.UrlTemplateImageryProvider({
+						url: 'https://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
 					}),
 					{ show: true }
 				);
 				viewer.imageryLayers.add(guge);
 			}
-
+			if (/baiduIamge/gi.test($(this).html())) {
+				// viewer.imageryLayers.removeAll();
+				alert('待完善');
+			}
+			if (/tdtImageLable/gi.test($(this).html())) {
+				var guge = new Cesium.ImageryLayer(
+					new Cesium.UrlTemplateImageryProvider({
+						url: '//t3.tianditu.com/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=' + token,
+						layer: 'cia',
+						style: 'default',
+						tileMatrixSetID: 'w',
+						format: 'tiles',
+						maximumLevel: 18,
+					}),
+					{ show: true }
+				);
+				viewer.imageryLayers.add(guge);
+			}
+			if (/tdtStreetLable/gi.test($(this).html())) {
+			}
 			if (/WorldTerrain/gi.test($(this).html())) {
 				// // // Load Cesium World Terrain加载世界地形
 				viewer.terrainProvider = Cesium.createWorldTerrain({
