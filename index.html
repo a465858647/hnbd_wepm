@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>河南北斗三维展示平台</title>
+		<link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css" />
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/bootstrap.min.js"></script>
+		<script src="Cesium/Cesium.js"></script>
+		<script src="JS/hnbd_3d_package-tem.js" type="module"></script>
+		<script src="JS/hnbd_3d_toolBox.js"></script>
+		<script src="http://api.tianditu.gov.cn/cdn/plugins/cesium/cesiumTdt.js"></script>
+		<link rel="stylesheet" href="Cesium/Widgets/widgets.css" />
+		<script src="172.16.100.181:7080"></script>
+		<!--  /*                    导航栏                             */ -->
+		<script src="/node_modules/cesium-navigation/navigation.js"></script>
+		<!--  /*                    /导航栏                             */ -->
+		<!--  /*                    登录                             */ -->
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/emailLogin/reset.css" />
+		<link rel="stylesheet" href="css/emailLogin/style.css" />
+		<script src="js/modernizr.js"></script>
+		<!--  /*                    /登录                             */ -->
+		<!--                 设置导航条                         -->
+		<style>
+			.compass {
+				position: absolute;
+				left: 0;
+				top: 10px;
+			}
+
+			.navigation-controls {
+				position: absolute;
+				left: 30px;
+				top: 120px;
+				height: 90px;
+			}
+		</style>
+	</head>
+	<body >
+		<!--  /*                    模态框-------本地服务                             */ -->
+		<div class="modal fade" tabindex="-1" role="dialog" id="mylocalServer">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">加载本地服务</h4>
+					</div>
+					<div class="modal-body">
+						<div style="display: block;">
+							<label>WMTS URL:</label>
+							<input
+								style="width: 400px;"
+								type="text"
+								value="http://172.16.100.181:7080/PBS/rest/services/MyPBSService1/MapServer/WMTS"
+								id="localServerUrl"
+							/>
+							<input type="button" value="加载" id="localServerLoad" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  /*                    模态框-------登录                             */ -->
+		<!-- Button trigger modal -->
+		<div class="modal fade" tabindex="-1" role="dialog" id="myLogin">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">登录</h4>
+					</div>
+					<div class="modal-body">
+						<!-- 登录框 -->
+						<div id="cd-login" style="display: block;">
+							<!-- log in form -->
+							<form class="cd-form">
+								<p class="fieldset">
+									<label class="image-replace cd-email" for="signin-email">E-mail</label>
+									<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail" />
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+
+								<p class="fieldset">
+									<label class="image-replace cd-password" for="signin-password">Password</label>
+									<input class="full-width has-padding has-border" id="signin-password" type="text" placeholder="Password" />
+									<a href="#0" class="hide-password">隐藏</a>
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+
+								<p class="fieldset">
+									<input type="checkbox" id="remember-me" checked />
+									<label for="remember-me">保存信息</label>
+								</p>
+
+								<p class="fieldset">
+									<input class="full-width" type="submit" value="登录" />
+								</p>
+							</form>
+
+							<p class="cd-form-bottom-message"><a href="#0">忘记密码?</a></p>
+							<!-- <a href="#0" class="cd-close-form">Close</a> -->
+						</div>
+						<!-- cd-login -->
+
+						<!-- /登录框 -->
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!--  /*                    /模态框-------登录                             */ -->
+		<!--  /*                    模态框-------注册                             */ -->
+		<!-- Button trigger modal -->
+		<div class="modal fade" role="dialog" id="mySignUp">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">注册</h4>
+					</div>
+					<div class="modal-body">
+						<!-- 注册框 -->
+						<div id="cd-signup" style="display: block;">
+							<!-- sign up form -->
+							<form class="cd-form">
+								<p class="fieldset">
+									<label class="image-replace cd-username" for="signup-username">用户名</label>
+									<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username" />
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+
+								<p class="fieldset">
+									<label class="image-replace cd-email" for="signup-email">邮箱</label>
+									<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail" />
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+
+								<p class="fieldset">
+									<label class="image-replace cd-password" for="signup-password">密码</label>
+									<input class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Password" />
+									<a href="#0" class="hide-password">隐藏</a>
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+
+								<p class="fieldset">
+									<input type="checkbox" id="accept-terms" />
+									<label for="accept-terms">我同意 <a href="#0">条款</a></label>
+								</p>
+
+								<p class="fieldset">
+									<input class="full-width has-padding" type="submit" value="注册" />
+								</p>
+							</form>
+							<!-- <a href="#0" class="cd-close-form">Close</a> -->
+						</div>
+						<!-- /注册框 -->
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!--  /*                    /模态框-------注册                             */ -->
+		<div class="container-fluid" id="container-fluid">
+			<div class="row" id="nav">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button
+								type="button"
+								class="navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1"
+								aria-expanded="false"
+							>
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">河南北斗</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<!-- <li class="active">
+									<a href="#">Link<span class="sr-only">(current)</span></a>
+								</li>
+								<li><a href="#">Link</a></li> -->
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+										>项目<span class="caret"></span
+									></a>
+									<ul class="dropdown-menu" id="projectChoose">
+										<li><a href="#" id="jixigaosu">机西高速项目</a></li>
+										<!-- <li><a href="#" id="googleIamge">Google Earth影像</a></li>
+										<li><a href="#" id="tiandituImage">天地图影像</a></li> -->
+										<!-- <li role="separator" class="divider"></li>
+										<li><a href="#" id="WorldTerrain">世界地形</a></li>
+										<li><a href="#" id="tiandituTerrain">天地图地形</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#" id="tiandituAnno">天地图三维地名</a></li>
+										<li><a href="#" id="nationalBoundaries">国界</a></li> -->
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+										>图层<span class="caret"></span
+									></a>
+									<ul class="dropdown-menu" id="imageLayer">
+										<li><a href="#" id="esriIamge">Esri ArcGIS影像</a></li>
+										<li><a href="#" id="googleIamge">Google Earth影像</a></li>
+										<li><a href="#" id="tiandituImage">天地图影像</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#" id="WorldTerrain">世界地形</a></li>
+										<li><a href="#" id="tiandituTerrain">天地图地形</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#" id="tiandituAnno">天地图三维地名</a></li>
+										<li><a href="#" id="nationalBoundaries">国界</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#" data-toggle="modal" data-target="#mylocalServer">添加本地服务</a></li>
+										<li><a href="#" id="removeAllImage">移除所有地图</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+										>效果<span class="caret"></span
+									></a>
+									<ul class="dropdown-menu" id="specialEffect">
+										<li><a href="#" id="lightAndWater">光照和水面</a></li>
+										<li><a href="#" id="atmosphere">大气层</a></li>
+										<!-- <li><a href="#" id="googleIamge">Google Earth影像</a></li>
+										<li><a href="#" id="tiandituImage">天地图影像</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#" id="WorldTerrain">世界地形</a></li>
+										<li><a href="#" id="tiandituTerrain">天地图地形</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#" id="tiandituAnno">天地图三维地名</a></li>
+										<li><a href="#" id="nationalBoundaries">国界</a></li> -->
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+										>工具<span class="caret"></span
+									></a>
+									<ul class="dropdown-menu" id="toolBox">
+										<li><a href="#" id="measureDistance">距离</a></li>
+										<li><a href="#" id="measureArea">面积</a></li>
+										<!-- <li><a href="#" id="tiandituImage">天地图影像</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#" id="WorldTerrain">世界地形</a></li>
+										<li><a href="#" id="tiandituTerrain">天地图地形</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#" id="tiandituAnno">天地图三维地名</a></li>
+										<li><a href="#" id="nationalBoundaries">国界</a></li> -->
+									</ul>
+								</li>
+							</ul>
+							<form class="navbar-form navbar-left">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search" />
+								</div>
+								<button type="submit" class="btn btn-default">搜索</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#" data-toggle="modal" data-target="#myLogin">登录</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#mySignUp">注册</a></li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</nav>
+			</div>
+			<div class="row" id="cesiumdiv" style="margin-top: -20px;"></div>
+		</div>
+	</body>
+</html>
