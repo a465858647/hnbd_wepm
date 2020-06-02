@@ -53,7 +53,19 @@ window.onload = function () {
 			"<div class='cesium-credit-logoContainer' style='display: inline;'><div style='display: inline;'><a href='http://www.beidou-hn.com/' target='_blank'><img title='Cesium ion' src='img/logo/logo.png' height='35px'></a></div></div>";
 		$('.cesium-widget-credits').html(hnbd_widget);
 	});
-
+	/*初始化谷歌地图*/
+	viewer.imageryLayers.removeAll();
+	var guge = new Cesium.ImageryLayer(
+		new Cesium.UrlTemplateImageryProvider({
+			url: 'http://www.google.cn/maps/vt?lyrs=s@800&x={x}&y={y}&z={z}',
+			tilingScheme: new Cesium.WebMercatorTilingScheme(),
+			minimumLevel: 1,
+			maximumLevel: 20,
+			credit: 'http://www.bjxbsj.cn',
+		}),
+		{ show: true }
+	);
+	viewer.imageryLayers.add(guge);
 	// // // Create an initial camera view创建相机初始位置和朝向
 	// var initialPosition = new Cesium.Cartesian3.fromDegrees(114.14774, 34.67566, 13170);
 	// var initialOrientation = new Cesium.HeadingPitchRoll.fromDegrees(350.71, -45.19, 0);
@@ -350,8 +362,8 @@ window.onload = function () {
 					{ show: true }
 				);
 				viewer.imageryLayers.add(guge);
-      }
-  
+			}
+
 			if (/WorldTerrain/gi.test($(this).html())) {
 				// // // Load Cesium World Terrain加载世界地形
 				viewer.terrainProvider = Cesium.createWorldTerrain({
