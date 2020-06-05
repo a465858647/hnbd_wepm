@@ -68,15 +68,6 @@ window.onload = function () {
 		{ show: true }
 	);
 	viewer.imageryLayers.add(guge);
-
-	//                   添加实体
-	// */
-	/* var billboard = viewer.entities.add({
-		name: 'entity',
-		description: '这是我的第一个测试',
-		position: Cesium.Cartesian3.fromDegrees(110, 40, 0),
-		billboard: { image: '../img/logo/logo.png', width: 32, height: 32 },
-	}); */
 	/*            工具管理             */
 	$(function () {
 		$('#toolBox #measureDistance').on('click', function (handler) {
@@ -195,13 +186,7 @@ window.onload = function () {
 				viewer.imageryLayers.add(guge);
 			}
 			if (/tdtStreetLable/gi.test($(this).html())) {
-				// var imgMap = new Cesium.WebMapTileServiceImageryProvider({
-				// 	url: 'http://gisserver.tianditu.gov.cn/TDTService/wfs',
-				// 	// subdomains: subdomains,
-				// 	// tilingScheme: new Cesium.WebMercatorTilingScheme(),
-				// 	// maximumLevel: 18,
-				// });
-				// viewer.imageryLayers.addImageryProvider(imgMap);
+	
 			}
 			if (/WorldTerrain/gi.test($(this).html())) {
 				// // // Load Cesium World Terrain加载世界地形
