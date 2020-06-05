@@ -322,7 +322,7 @@ window.onload = function () {
 				]);
 			}
 		});
-		$('#localServerLoad').on('click', function () {
+		$('#AddWMTS').on('click', function () {
 			var url = $('#localServerUrl').prop('value');
 			// Example 2. USGS shaded relief tiles (RESTful)
 			var shadedRelief2 = new Cesium.WebMapTileServiceImageryProvider({
