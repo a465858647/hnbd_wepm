@@ -10,6 +10,8 @@ window.onresize = function () {
 	oMap.style.height = size.height - oNavbar.offsetHeight + 20 + 'px';
 };
 window.onload = function () {
+	Cesium.Ion.defaultAccessToken =
+		'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZDFlN2QyNi05NTMyLTRkZjMtYjM3Ni1iZTQzY2M1NGVhNjAiLCJpZCI6Mjg2NjUsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1OTEzMjY3MDJ9.h-nWrkKCjr308Y1iOz28f26eogyP6ZPfgfo1pny_vl0';
 	/*窗体初始化*/
 	var ocontainerFluid = document.getElementById('container-fluid');
 	var oNavbar = document.getElementById('nav');
@@ -338,6 +340,16 @@ window.onload = function () {
 		});
 		$('#removeAllImage').on('click', function () {
 			viewer.imageryLayers.removeAll();
+		});
+		//添加3Dtiles
+		$('#Add3DTiles').on('click', function () {
+			var tileset = new Cesium.Cesium3DTileset({
+				url: '../11.clt/tileset.json',
+				shadows: Cesium.ShadowMode.DISABLED, //去除阴影
+			});
+			//
+			viewer.scene.primitives.add(tileset);
+			viewer.zoomTo(tileset);
 		});
 	});
 
