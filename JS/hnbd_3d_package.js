@@ -344,7 +344,7 @@ window.onload = function () {
 		//添加3Dtiles
 		$('#Add3DTiles').on('click', function () {
 			var tileset = new Cesium.Cesium3DTileset({
-				url: '../11.clt/tileset.json',
+				url: 'http://172.16.100.126:8888/jxgs.clt/tileset.json',
 				shadows: Cesium.ShadowMode.DISABLED, //去除阴影
 			});
 			//
