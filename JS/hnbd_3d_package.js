@@ -1,3 +1,4 @@
+var viewer;
 window.onresize = function () {
 	/*窗体初始化*/
 	var ocontainerFluid = document.getElementById('container-fluid');
@@ -32,7 +33,7 @@ window.onload = function () {
 	var china = Cesium.Rectangle.fromDegrees(100, 10, 120, 70);
 	Cesium.Camera.DEFAULT_VIEW_RECTANGLE = china;
 
-	var viewer = new Cesium.Viewer('cesiumdiv', {
+	viewer = new Cesium.Viewer('cesiumdiv', {
 		animation: false, //动画控件
 		baseLayerPicker: false, //图层选择
 		timeline: false, //时间线
@@ -186,7 +187,6 @@ window.onload = function () {
 				viewer.imageryLayers.add(guge);
 			}
 			if (/tdtStreetLable/gi.test($(this).html())) {
-	
 			}
 			if (/WorldTerrain/gi.test($(this).html())) {
 				// // // Load Cesium World Terrain加载世界地形
@@ -337,25 +337,4 @@ window.onload = function () {
 			viewer.zoomTo(tileset);
 		});
 	});
-
-	// /*
-	//         高亮函数,鼠标交互
-	// */
-	// var previousPickedEntity;
-	// var handler = viewer.screenSpaceEventHandler;
-	// handler.setInputAction(function (movement) {
-	// 	var pickedPrimitive = viewer.scene.pick(movement.endPosition);
-	// 	var pickedEntity = Cesium.defined(pickedPrimitive) ? pickedPrimitive.id : undefined;
-	// 	// 取消上一个高亮对象的高亮效果
-	// 	if (Cesium.defined(previousPickedEntity)) {
-	// 		previousPickedEntity.billboard.scale = 1.0;
-	// 		previousPickedEntity.billboard.color = Cesium.Color.WHITE;
-	// 	}
-	// 	// 当前entity高亮
-	// 	if (Cesium.defined(pickedEntity) && Cesium.defined(pickedEntity.billboard)) {
-	// 		pickedEntity.billboard.scale = 1.5;
-	// 		pickedEntity.billboard.color = Cesium.Color.WHITE;
-	// 		previousPickedEntity = pickedEntity;
-	// 	}
-	// }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 };
