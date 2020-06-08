@@ -1,3 +1,4 @@
+// import './lib';
 require.config({
 	baseUrl: 'js/',
 	paths: {
@@ -6,7 +7,7 @@ require.config({
 		cesium: '../node_modules/Cesium/Cesium',
 		initmap: 'hnbd/hnbd_initmap',
 		layers: 'hnbd/hnbd_layers',
-		tianditu: 'tdt/cesiumTdt',
+		tianditu: '../node_modules/cesium-tdt/dist/cesiumTdt',
 	},
 });
 var viewer;
@@ -17,5 +18,11 @@ require(['jquery'], function () {
 	require(['bootstrap'], function () {});
 });
 require(['initmap']);
-require(['layers']);
-require(['tianditu'],function(){alert(1)})
+require(['cesium'], function () {
+	// alert('cesium加载成功')
+	require(['tianditu'], function () {
+		alert('ok');
+	} /* , function (err) {
+		alert(err);
+	} */);
+});
