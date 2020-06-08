@@ -22,6 +22,7 @@ require(['cesium'], function () {
 	// alert('cesium加载成功')
 	require(['tianditu'], function () {
 		alert('ok');
+		require(['layers']);
 	} /* , function (err) {
 		alert(err);
 	} */);
