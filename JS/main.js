@@ -17,6 +17,6 @@ require(['jquery'], function () {
 	require(['bootstrap'], function () {});
 });
 require(['initmap']);
-// require(['http://api.tianditu.gov.cn/cdn/plugins/cesium/cesiumTdt.js'], function () {
-// 	require(['layers']);
-// });
+require(['http://api.tianditu.gov.cn/cdn/plugins/cesium/cesiumTdt.js'], function () {
+	require(['layers']);
+});
