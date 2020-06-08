@@ -4,9 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>河南北斗三维展示平台</title>
-    <script data-main="js/main.js" src="JS/require.js"></script>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/Cesium/Widgets/widgets.css">
+		<script data-main="js/main.js" src="JS/require.js"></script>
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="node_modules/Cesium/Widgets/widgets.css" />
 		<!--                 设置导航条                         -->
 		<style>
 			.compass {
@@ -24,19 +24,6 @@
 		</style>
 	</head>
 	<body>
-		<!-- /* 模态框-------本地服务 */ -->
-		<div class="modal fade" tabindex="-1" role="dialog" id="mylocalServer">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title">加载本地服务</h4>
-					</div>
-					<div class="modal-body"></div>
-					内容。。。。
-				</div>
-			</div>
-		</div>
 		<div class="container-fluid" id="container-fluid">
 			<div class="row" id="nav">
 				<nav class="navbar navbar-default">
@@ -61,24 +48,12 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
-								<!-- <li class="active">
-									<a href="#">Link<span class="sr-only">(current)</span></a>
-								</li>
-								<li><a href="#">Link</a></li> -->
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
 										>项目<span class="caret"></span
 									></a>
 									<ul class="dropdown-menu" id="projectChoose">
 										<li><a href="#" id="jixigaosu">机西高速项目</a></li>
-										<!-- <li><a href="#" id="googleIamge">Google Earth影像</a></li>
-										<li><a href="#" id="tiandituImage">天地图影像</a></li> -->
-										<!-- <li role="separator" class="divider"></li>
-										<li><a href="#" id="WorldTerrain">世界地形</a></li>
-										<li><a href="#" id="tiandituTerrain">天地图地形</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a href="#" id="tiandituAnno">天地图三维地名</a></li>
-										<li><a href="#" id="nationalBoundaries">国界</a></li> -->
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -88,18 +63,12 @@
 									<ul class="dropdown-menu" id="imageLayer">
 										<li><a href="#" id="gaodeIamge">高德</a></li>
 										<li><a href="#" id="googleIamge">谷歌</a></li>
-										<!-- <li><a href="#" id="baiduIamge">百度</a></li> -->
-										<!-- <li><a href="#" id="tdtStreetLable">天地图街道注记</a></li> -->
+
 										<li role="separator" class="divider"></li>
-										<!-- <li><a href="#" id="WorldTerrain">世界地形</a></li> -->
 										<li><a href="#" id="tiandituTerrain">天地图地形</a></li>
 										<li role="separator" class="divider"></li>
 										<li><a href="#" id="tiandituAnno">天地图三维地名</a></li>
 										<li><a href="#" id="tdtImageLable">天地图二维地名</a></li>
-										<!-- <li><a href="#" id="nationalBoundaries">国界</a></li> -->
-										<li role="separator" class="divider"></li>
-										<li><a href="#" data-toggle="modal" data-target="#AddWMTS">添加WMTS</a></li>
-										<li><a href="#" id="Add3DTiles">添加3D Tiles</a></li>
 										<li role="separator" class="divider"></li>
 										<li><a href="#" id="removeAllImage">移除所有地图</a></li>
 									</ul>
