@@ -1,11 +1,6 @@
 require.config({
-	baseUrl: '../JS',
+	baseUrl: 'js',
 	paths: {
-		jquery: 'jquery.min',
-		ceshi: 'ceshi',
+		jquery: 'jquery/jquery-3.5.1',
 	},
-});
-require(['ceshi'], function (ceshi) {
-	alert(ceshi.name);
-	ceshi.md1();
 });
