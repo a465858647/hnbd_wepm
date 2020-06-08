@@ -18,4 +18,4 @@ require(['jquery'], function () {
 });
 require(['initmap']);
 require(['layers']);
-//  require(['tianditu'],function(){alert(1)})
+require(['tianditu'],function(){alert(1)})
