@@ -1,4 +1,4 @@
-define(['cesium', 'jquery'], function (Cesium, $) {
+define(['cesium', 'jquery', 'http://api.tianditu.gov.cn/cdn/plugins/cesium/cesiumTdt.js'], function (Cesium, $, tianditu) {
 	/*            图层管理             */
 	$('#imageLayer li').on('click', function () {
 		if (/googleIamge/gi.test($(this).html())) {
