@@ -6,7 +6,7 @@ require.config({
 		cesium: '../node_modules/Cesium/Cesium',
 		initmap: 'hnbd/hnbd_initmap',
 		layers: 'hnbd/hnbd_layers',
-		// tianditu: 'http://api.tianditu.gov.cn/cdn/plugins/cesium/cesiumTdt',
+		tianditu: 'tdt/cesiumTdt',
 	},
 });
 var viewer;
@@ -18,3 +18,4 @@ require(['jquery'], function () {
 });
 require(['initmap']);
 require(['layers']);
+//  require(['tianditu'],function(){alert(1)})
