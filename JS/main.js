@@ -8,6 +8,7 @@ require.config({
 		layers: 'hnbd/hnbd_layers',
 	},
 });
+var viewer;
 require(['jquery'], function () {
 	require(['bootstrap'], function () {});
 });
