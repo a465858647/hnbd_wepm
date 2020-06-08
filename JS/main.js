@@ -6,6 +6,6 @@ require.config({
 	},
 });
 require(['ceshi'], function (ceshi) {
-alert(ceshi.name)
-ceshi.md1()
+	alert(ceshi.name);
+	ceshi.md1();
 });
