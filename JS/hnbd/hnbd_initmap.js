@@ -34,7 +34,7 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 		navigationHelpButton: false, //帮助图标
 		sceneModePicker: false,
 		// vrButton: true,
-		//infoBox: false,//设置为false信息窗口将不再弹出
+		infoBox: true,//设置为false信息窗口将不再弹出
 	});
 	// 显示FPS
 	viewer.scene.debugShowFramesPerSecond = true;

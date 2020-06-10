@@ -7,6 +7,7 @@ require.config({
 		initmap: 'hnbd/hnbd_initmap',
 		layers: 'hnbd/hnbd_layers',
 		pm: 'hnbd/hnbd_pm',
+		loaddth: 'hnbd/hnbd_pm_loaddth',
 		// tianditu: '../node_modules/cesium-tdt/dist/cesiumTdt',
 	},
 });

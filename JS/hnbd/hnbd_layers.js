@@ -45,6 +45,7 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 			});
 			viewer.terrainProvider = terrainProvider;
 			viewer.scene.globe.enableLighting = true;
+			// viewer.scene.globe.depthTestAgainstTerrain = true;
 		}
 	});
 	$('#removeAllImage').on('click', function () {
