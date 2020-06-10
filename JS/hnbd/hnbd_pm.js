@@ -65,6 +65,5 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 			0
 		);
 		require(['loaddth']);
-		// viewer.zoomTo(tileset2, { heading: 0, pitch: -0.5, range: 10000 });
 	});
 });

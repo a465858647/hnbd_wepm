@@ -1,4 +1,1316 @@
 define(['cesium'], function (Cesium) {
+	function addEntity23() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1193974, 34.838955, 78.12);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(180);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt001',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity23();
+	function addEntity24() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1200767, 34.8208814, 76.97);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(5);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt002',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity24();
+	function addEntity25() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1191786, 34.8028601, 76.16);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(358);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt003',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity25();
+	function addEntity26() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1224137, 34.7880481, 72.06);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(352);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt004',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity26();
+	function addEntity27() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1237456, 34.7806687, 77.92);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(358);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt005',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity27();
+	function addEntity28() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1245108, 34.7644597, 76.59);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(182);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt006',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity28();
+	function addEntity43() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1209642, 34.7407104, 74.93);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(30);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt007',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity43();
+	function addEntity56() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1244054, 34.7513151, 73.77);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(19);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt008',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity56();
+	function addEntity57() {
+		var position = Cesium.Cartesian3.fromDegrees(114.124712, 34.7506612, 73.94);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(198);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt009',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity57();
+	function addEntity58() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1176433, 34.7297715, 75.45);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(18);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt010',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity58();
+	function addEntity60() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1276216, 34.7043768, 79.92);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(70);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt011',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity60();
+	function addEntity61() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1287333, 34.6966275, 75);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(4);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt012',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity61();
+	function addEntity63() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1261893, 34.6807829, 75.01);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(171);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt013',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity63();
+	function addEntity64() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1244578, 34.7128668, 75.5);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(2);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt014',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity64();
+	function addEntity88() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1250963, 34.664446, 75.12);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(10);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt015',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity88();
+	function addEntity89() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1247309, 34.6461246, 73.24);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(180);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt016',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity89();
+	function addEntity113() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1236014, 34.6405484, 74.14);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(180);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt017',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity113();
+	function addEntity114() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1206248, 34.6260884, 75.96);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(20);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt018',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity114();
+	function addEntity116() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1092108, 34.589619, 72.11);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(180);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt019',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity116();
+	function addEntity117() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1152657, 34.6072131, 74);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(180);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt020',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity117();
+	function addEntity140() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0877827, 34.5575905, 76.79);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(35);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt021',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity140();
+	function addEntity141() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0835908, 34.5408918, 79.68);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(35);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt022',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity141();
+	function addEntity142() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0744573, 34.5315743, 78.47);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(220);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt023',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity142();
+	function addEntity143() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0622402, 34.5254875, 80.3);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(220);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt024',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity143();
+	function addEntity144() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0540622, 34.5187409, 81.5);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(45);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt025',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity144();
+	function addEntity145() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0485574, 34.5077758, 84.98);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(30);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt026',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity145();
+	function addEntity147() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0997165, 34.5747904, 76.82);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(200);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt027',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity147();
+	function addEntity148() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0462591, 34.4993663, 81.83);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(25);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt028',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity148();
+	function addEntity172() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0431371, 34.4879353, 84.85);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(20);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt029',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity172();
+	function addEntity173() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0434245, 34.4875906, 84.63);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(5);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt030',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity173();
+	function addEntity174() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0408901, 34.4699095, 95.22);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(350);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt031',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity174();
+	function addEntity176() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0460136, 34.4544821, 88.34);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(0);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt032',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity176();
+	function addEntity177() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0496857, 34.4466932, 81.74);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(165);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt033',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity177();
+	function addEntity194() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0619006, 34.427781, 84.21);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(170);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt034',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity194();
+	function addEntity297() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1204835, 34.255895, 65.87);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(340);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt035',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity297();
+	function addEntity324() {
+		var position = Cesium.Cartesian3.fromDegrees(114.2002701, 34.2122258, 60.62);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(310);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt044',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity324();
+	function addEntity342() {
+		var position = Cesium.Cartesian3.fromDegrees(114.2488015, 34.1693831, 60.19);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(350);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt045',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity342();
+	function addEntity343() {
+		var position = Cesium.Cartesian3.fromDegrees(114.2950992, 34.1010105, 55.03);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(310);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt046',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity343();
+	function addEntity344() {
+		var position = Cesium.Cartesian3.fromDegrees(114.2951814, 34.1010915, 55.03);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(130);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt047',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity344();
+	function addEntity345() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3001928, 34.0974388, 57.9);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(120);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt048',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity345();
+	function addEntity346() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3011588, 34.0970759, 58.02);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(300);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt049',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity346();
+	function addEntity347() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3116334, 34.0776484, 59.32);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(160);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt050',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity347();
+	function addEntity349() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3119772, 34.0670138, 50.22);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(165);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt051',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity349();
+	function addEntity350() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3138082, 34.0667526, 46.34);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(55);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt052',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity350();
+	function addEntity351() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3136236, 34.0663246, 48.37);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(47);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt053',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity351();
+	function addEntity352() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3136579, 34.066297, 48.37);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(223);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt054',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity352();
+	function addEntity353() {
+		var position = Cesium.Cartesian3.fromDegrees(114.313748, 34.0662288, 48.37);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(223);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt055',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity353();
+	function addEntity371() {
+		var position = Cesium.Cartesian3.fromDegrees(114.321192, 33.9877104, 52.33);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(10);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt056',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity371();
+	function addEntity373() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3236186, 33.9790541, 55.17);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(330);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt057',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity373();
+	function addEntity374() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3251002, 33.974351, 55.5);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(350);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt058',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity374();
+	function addEntity377() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3476956, 33.9498032, 48.19);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(311);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt059',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity377();
+	function addEntity378() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3478072, 33.9498879, 48.19);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(131);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt060',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity378();
+	function addEntity379() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3844206, 33.8952618, 53.52);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(150);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt061',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity379();
+	function addEntity397() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4177623, 33.832623, 47.19);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(324);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt062',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity397();
+	function addEntity398() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4178405, 33.83267, 47.19);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(324);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt063',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity398();
+	function addEntity400() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4254555, 33.8232005, 48.88);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(340);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt064',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity400();
+	function addEntity401() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4283798, 33.8217781, 47.41);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(97);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt065',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity401();
+	function addEntity402() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4283816, 33.821656, 47.66);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(85);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt066',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity402();
+	function addEntity403() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4283824, 33.8215942, 47.66);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(85);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt067',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity403();
+	function addEntity404() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4286812, 33.8214832, 46.84);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(64);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt068',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity404();
+	function addEntity423() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4697104, 33.7661059, 52.31);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(315);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt069',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity423();
+	function addEntity424() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4669582, 33.7674749, 44.51);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(90);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt070',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity424();
+	function addEntity425() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4674308, 33.767282, 43.67);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(92);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt071',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity425();
+	function addEntity426() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4674305, 33.7672499, 43.67);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(272);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt072',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity426();
+	function addEntity427() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4674034, 33.767079, 44.5);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(290);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt073',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity427();
+	function addEntity445() {
+		var position = Cesium.Cartesian3.fromDegrees(114.5069362, 33.7183308, 48.51);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(115);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt074',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity445();
+	function addEntity446() {
+		var position = Cesium.Cartesian3.fromDegrees(114.5080285, 33.7179329, 48.43);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(145);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt075',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity446();
+	function addEntity448() {
+		var position = Cesium.Cartesian3.fromDegrees(114.5416237, 33.678981, 44.1);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(320);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt076',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity448();
+	function addEntity449() {
+		var position = Cesium.Cartesian3.fromDegrees(114.54171, 33.6790408, 44.1);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(140);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt077',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity449();
+	function addEntity450() {
+		var position = Cesium.Cartesian3.fromDegrees(114.5485347, 33.6715907, 51.2);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(130);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt078',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity450();
+	function addEntity451() {
+		var position = Cesium.Cartesian3.fromDegrees(114.5580955, 33.6616081, 43.27);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(320);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt079',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity451();
+	function addEntity452() {
+		var position = Cesium.Cartesian3.fromDegrees(114.5583257, 33.6617065, 48.33);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+		var heading = Cesium.Math.toRadians(305);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'cssxt080',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity452();
+	function addEntity215() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1176775, 34.7305509, 69.21);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(90);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz001',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity215();
+	function addEntity225() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1182696, 34.7264183, 68.56);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(260);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz002',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity225();
+	function addEntity234() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1190831, 34.7221989, 66.04);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(70);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz003',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity234();
+	function addEntity244() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1215206, 34.7183959, 70.7);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(240);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz004',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity244();
+	function addEntity252() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1236182, 34.7143883, 70.87);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(60);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz05',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity252();
+	function addEntity256() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1242337, 34.7132928, 69.46);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(65);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz06',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity256();
+	function addEntity264() {
+		var position = Cesium.Cartesian3.fromDegrees(114.125969, 34.7105961, 66.56);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(250);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz007',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity264();
+	function addEntity272() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1271587, 34.7063787, 70.4);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(75);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz008',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity272();
+	function addEntity283() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1285669, 34.7022426, 74.24);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(260);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz009',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity283();
+	function addEntity292() {
+		var position = Cesium.Cartesian3.fromDegrees(114.128732, 34.6977885, 69.94);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
+		var heading = Cesium.Math.toRadians(85);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'c-v2xjz010',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity292();
 	function addEntity1() {
 		var position = Cesium.Cartesian3.fromDegrees(114.1200378, 34.7973234, 70.9);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -351,150 +1663,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity22();
-	function addEntity23() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1193974, 34.838955, 78.12);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(180);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt001',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity23();
-	function addEntity24() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1200767, 34.8208814, 76.97);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(5);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt002',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity24();
-	function addEntity25() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1191786, 34.8028601, 76.16);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(358);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt003',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity25();
-	function addEntity26() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1224137, 34.7880481, 72.06);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(352);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt004',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity26();
-	function addEntity27() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1237456, 34.7806687, 77.92);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(358);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt005',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity27();
-	function addEntity28() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1245108, 34.7644597, 76.59);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(182);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt006',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity28();
-	function addEntity29() {
-		var position = Cesium.Cartesian3.fromDegrees(114.120304, 34.830007, 75.16);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb/jqbb.gltf';
-		var heading = Cesium.Math.toRadians(176);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb001',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity29();
-	function addEntity30() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1224808, 34.7878387, 65.5);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(350);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb001',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity30();
-	function addEntity31() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1248675, 34.7646228, 70.2);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(180);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb002',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity31();
 	function addEntity32() {
 		var position = Cesium.Cartesian3.fromDegrees(114.1211925, 34.7410736, 70.5);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -671,38 +1839,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity42();
-	function addEntity43() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1209642, 34.7407104, 74.93);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(30);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt007',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity43();
-	function addEntity44() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1208928, 34.7405, 68.8);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(23);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb003',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity44();
 	function addEntity45() {
 		var position = Cesium.Cartesian3.fromDegrees(114.1208603, 34.7399771, 71.69);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -879,166 +2015,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity55();
-	function addEntity56() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1244054, 34.7513151, 73.77);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(19);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt008',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity56();
-	function addEntity57() {
-		var position = Cesium.Cartesian3.fromDegrees(114.124712, 34.7506612, 73.94);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(198);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt009',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity57();
-	function addEntity58() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1176433, 34.7297715, 75.45);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(18);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt010',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity58();
-	function addEntity59() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1201049, 34.7207928, 68.4);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(157);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb004',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity59();
-	function addEntity60() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1276216, 34.7043768, 79.92);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(70);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt011',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity60();
-	function addEntity61() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1287333, 34.6966275, 75);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(4);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt012',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity61();
-	function addEntity62() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1277054, 34.6856631, 71.38);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb/jqbb.gltf';
-		var heading = Cesium.Math.toRadians(191);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb002',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity62();
-	function addEntity63() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1261893, 34.6807829, 75.01);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(171);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt013',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity63();
-	function addEntity64() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1244578, 34.7128668, 75.5);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(2);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt014',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity64();
-	function addEntity65() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1246115, 34.7127652, 71.85);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb/jqbb.gltf';
-		var heading = Cesium.Math.toRadians(336);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb003',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity65();
 	function addEntity66() {
 		var position = Cesium.Cartesian3.fromDegrees(114.125038, 34.7118101, 69.71);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -1391,38 +2367,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity87();
-	function addEntity88() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1250963, 34.664446, 75.12);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(10);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt015',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity88();
-	function addEntity89() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1247309, 34.6461246, 73.24);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(180);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt016',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity89();
 	function addEntity90() {
 		var position = Cesium.Cartesian3.fromDegrees(114.1242994, 34.643765, 68.71);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -1775,102 +2719,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity111();
-	function addEntity112() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1236543, 34.6407022, 67.58);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(9);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb005',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity112();
-	function addEntity113() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1236014, 34.6405484, 74.14);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(180);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt017',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity113();
-	function addEntity114() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1206248, 34.6260884, 75.96);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(20);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt018',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity114();
-	function addEntity115() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1184715, 34.6156338, 65.6);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(197);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb006',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity115();
-	function addEntity116() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1092108, 34.589619, 72.11);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(180);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt019',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity116();
-	function addEntity117() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1152657, 34.6072131, 74);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(180);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt020',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity117();
 	function addEntity118() {
 		var position = Cesium.Cartesian3.fromDegrees(114.1171777, 34.6127702, 66.75);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -2223,150 +3071,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity139();
-	function addEntity140() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0877827, 34.5575905, 76.79);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(35);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt021',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity140();
-	function addEntity141() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0835908, 34.5408918, 79.68);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(35);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt022',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity141();
-	function addEntity142() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0744573, 34.5315743, 78.47);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(220);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt023',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity142();
-	function addEntity143() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0622402, 34.5254875, 80.3);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(220);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt024',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity143();
-	function addEntity144() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0540622, 34.5187409, 81.5);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(45);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt025',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity144();
-	function addEntity145() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0485574, 34.5077758, 84.98);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(30);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt026',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity145();
-	function addEntity146() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0539131, 34.5185256, 75.27);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(36);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb007',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity146();
-	function addEntity147() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0997165, 34.5747904, 76.82);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(200);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt027',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity147();
-	function addEntity148() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0462591, 34.4993663, 81.83);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(25);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt028',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity148();
 	function addEntity149() {
 		var position = Cesium.Cartesian3.fromDegrees(114.0464204, 34.4998099, 77.48);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -2719,118 +3423,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity170();
-	function addEntity171() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0454803, 34.4952085, 76.8);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(194);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb008',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity171();
-	function addEntity172() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0431371, 34.4879353, 84.85);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(20);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt029',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity172();
-	function addEntity173() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0434245, 34.4875906, 84.63);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(5);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt030',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity173();
-	function addEntity174() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0408901, 34.4699095, 95.22);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(350);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt031',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity174();
-	function addEntity175() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0410101, 34.4698093, 91.82);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb/jqbb.gltf';
-		var heading = Cesium.Math.toRadians(346);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb004',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity175();
-	function addEntity176() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0460136, 34.4544821, 88.34);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(0);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt032',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity176();
-	function addEntity177() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0496857, 34.4466932, 81.74);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(165);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt033',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity177();
 	function addEntity178() {
 		var position = Cesium.Cartesian3.fromDegrees(114.0535217, 34.4407673, 75.76);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -3087,70 +3679,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity193();
-	function addEntity194() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0619006, 34.427781, 84.21);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(170);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt034',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity194();
-	function addEntity195() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0544656, 34.4394568, 73.88);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(328);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb009',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity195();
-	function addEntity196() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0564171, 34.4371595, 76.51);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb01/jqbb01.gltf';
-		var heading = Cesium.Math.toRadians(149);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb005',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity196();
-	function addEntity197() {
-		var position = Cesium.Cartesian3.fromDegrees(114.0644147, 34.4151042, 70.89);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(180);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb010',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity197();
 	function addEntity198() {
 		var position = Cesium.Cartesian3.fromDegrees(114.0646795, 34.4047965, 70.58);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -3407,1350 +3935,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity213();
-	function addEntity214() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1176767, 34.7305464, 69.85);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(160);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt001',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity214();
-	function addEntity215() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1176775, 34.7305509, 69.21);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(90);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz001',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity215();
-	function addEntity216() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1176433, 34.7297417, 69.37);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(160);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt002',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity216();
-	function addEntity217() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1181192, 34.7297208, 69.44);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(340);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt003',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity217();
-	function addEntity218() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1173022, 34.7294714, 69.84);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(135);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt004',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity218();
-	function addEntity219() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1176035, 34.7286193, 69.69);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(160);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt005',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity219();
-	function addEntity220() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1180855, 34.7286098, 69.69);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(340);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt006',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity220();
-	function addEntity221() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1177011, 34.7274989, 69.57);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(160);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt007',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity221();
-	function addEntity222() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1181245, 34.7275042, 69.57);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(340);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt008',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity222();
-	function addEntity223() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1178741, 34.7263758, 68.84);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(155);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt009',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity223();
-	function addEntity224() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1182695, 34.7264229, 69.2);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(335);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt010',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity224();
-	function addEntity225() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1182696, 34.7264183, 68.56);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(260);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz002',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity225();
-	function addEntity226() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1181167, 34.7252484, 68.46);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(155);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt011',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity226();
-	function addEntity227() {
-		var position = Cesium.Cartesian3.fromDegrees(114.118492, 34.7253, 68.46);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(330);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt012',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity227();
-	function addEntity228() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1183239, 34.7244186, 67.68);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(145);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt013',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity228();
-	function addEntity229() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1183265, 34.7244145, 67.35);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/hbld/hbld.gltf';
-		var heading = Cesium.Math.toRadians(75);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'hbld001',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity229();
-	function addEntity230() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1186982, 34.7244821, 67.68);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt014',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity230();
-	function addEntity231() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1186696, 34.7232997, 66.75);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(145);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt015',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity231();
-	function addEntity232() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1190291, 34.7233927, 66.78);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt016',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity232();
-	function addEntity233() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1190842, 34.7221944, 66.69);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(140);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt017',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity233();
-	function addEntity234() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1190831, 34.7221989, 66.04);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(70);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz003',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity234();
-	function addEntity235() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1194395, 34.7223007, 66.72);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(320);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt018',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity235();
-	function addEntity236() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1194383, 34.721386, 67.51);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(135);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt019',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity236();
-	function addEntity237() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1198081, 34.7214566, 67.58);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(315);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt020',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity237();
-	function addEntity238() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1198646, 34.7205084, 68.94);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(135);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt021',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity238();
-	function addEntity239() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1202252, 34.7206024, 68.96);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(315);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt022',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity239();
-	function addEntity240() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1204735, 34.7194133, 70.5);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(135);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt023',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity240();
-	function addEntity241() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1208268, 34.7195208, 70.75);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(315);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt024',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity241();
-	function addEntity242() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1211755, 34.7182727, 71.35);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(130);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt025',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity242();
-	function addEntity243() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1215187, 34.7184001, 71.35);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(310);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt026',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity243();
-	function addEntity244() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1215206, 34.7183959, 70.7);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(240);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz004',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity244();
-	function addEntity245() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1217105, 34.7174366, 71.57);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(130);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt027',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity245();
-	function addEntity246() {
-		var position = Cesium.Cartesian3.fromDegrees(114.122059, 34.7175561, 71.59);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(310);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt028',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity246();
-	function addEntity247() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1224139, 34.7163446, 71.77);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(130);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt029',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity247();
-	function addEntity248() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1227624, 34.7164641, 71.79);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(310);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt030',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity248();
-	function addEntity249() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1230401, 34.7153482, 71.92);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(130);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt031',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity249();
-	function addEntity250() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1233886, 34.7154677, 71.94);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(310);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt032',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity250();
-	function addEntity251() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1236203, 34.7143841, 71.52);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(130);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt033',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity251();
-	function addEntity252() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1236182, 34.7143883, 70.87);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(60);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz05',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity252();
-	function addEntity253() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1239739, 34.7144898, 71.49);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(310);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt034',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity253();
-	function addEntity254() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1242353, 34.7132884, 70.12);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(135);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt035',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity254();
-	function addEntity255() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1242387, 34.7132848, 69.78);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/hbld/hbld.gltf';
-		var heading = Cesium.Math.toRadians(65);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'hbld002',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity255();
-	function addEntity256() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1242337, 34.7132928, 69.46);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(65);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz06',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity256();
-	function addEntity257() {
-		var position = Cesium.Cartesian3.fromDegrees(114.124597, 34.713382, 70.07);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(315);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt036',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity257();
-	function addEntity258() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1246868, 34.7124312, 68.86);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(135);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt037',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity258();
-	function addEntity259() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1250484, 34.7125248, 68.81);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(315);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt038',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity259();
-	function addEntity260() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1251167, 34.7115654, 67.65);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(135);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt039',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity260();
-	function addEntity261() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1254784, 34.7116589, 67.6);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(315);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt040',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity261();
-	function addEntity262() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1256018, 34.710523, 67.21);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(140);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt041',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity262();
-	function addEntity263() {
-		var position = Cesium.Cartesian3.fromDegrees(114.125968, 34.7106006, 67.21);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(320);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt042',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity263();
-	function addEntity264() {
-		var position = Cesium.Cartesian3.fromDegrees(114.125969, 34.7105961, 66.56);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(250);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz007',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity264();
-	function addEntity265() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1260796, 34.7093927, 67.75);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(140);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt043',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity265();
-	function addEntity266() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1264491, 34.709461, 67.7);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(320);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt044',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity266();
-	function addEntity267() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1265061, 34.7083034, 68.29);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(145);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt045',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity267();
-	function addEntity268() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1268757, 34.7083589, 68.29);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt046',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity268();
-	function addEntity269() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1268008, 34.7074746, 69.16);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(145);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt047',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity269();
-	function addEntity270() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1271735, 34.7075281, 69.11);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt048',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity270();
-	function addEntity271() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1271594, 34.7063742, 71.05);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(145);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt049',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity271();
-	function addEntity272() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1271587, 34.7063787, 70.4);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(75);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz008',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity272();
-	function addEntity273() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1275367, 34.7064183, 71.08);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt050',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity273();
-	function addEntity274() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1274807, 34.7052448, 72.9);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(145);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt051',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity274();
-	function addEntity275() {
-		var position = Cesium.Cartesian3.fromDegrees(114.127863, 34.705295, 72.85);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt052',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity275();
-	function addEntity276() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1276452, 34.7042743, 74.06);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(150);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt053',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity276();
-	function addEntity277() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1281531, 34.7041812, 74.05);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt054',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity277();
-	function addEntity278() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1280253, 34.7030345, 74.95);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(150);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt055',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity278();
-	function addEntity279() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1284098, 34.703064, 74.94);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt056',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity279();
-	function addEntity280() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1281911, 34.7022162, 74.87);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(150);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt057',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity280();
-	function addEntity281() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1281933, 34.7022121, 74.53);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/hbld/hbld.gltf';
-		var heading = Cesium.Math.toRadians(80);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'hbld003',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity281();
-	function addEntity282() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1285667, 34.702247, 74.89);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(330);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt058',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity282();
-	function addEntity283() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1285669, 34.7022426, 74.24);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(260);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz009',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity283();
-	function addEntity284() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1284241, 34.7008247, 74.37);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(155);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt059',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity284();
-	function addEntity285() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1287957, 34.7008573, 74.37);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(330);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt060',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity285();
-	function addEntity286() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1285652, 34.6997159, 73.41);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(155);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt061',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity286();
-	function addEntity287() {
-		var position = Cesium.Cartesian3.fromDegrees(114.128987, 34.6997273, 73.37);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(335);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt062',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity287();
-	function addEntity288() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1286514, 34.6988883, 72.46);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(155);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt063',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity288();
-	function addEntity289() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1290683, 34.6988952, 72.44);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(335);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt064',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity289();
-	function addEntity290() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1284525, 34.6980889, 69.7);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(135);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt065',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity290();
-	function addEntity291() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1287317, 34.697784, 70.58);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(155);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt066',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity291();
-	function addEntity292() {
-		var position = Cesium.Cartesian3.fromDegrees(114.128732, 34.6977885, 69.94);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/c-v2xjz/c-v2xjz.gltf';
-		var heading = Cesium.Math.toRadians(85);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'c-v2xjz010',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity292();
-	function addEntity293() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1292043, 34.6977825, 70.56);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(335);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt067',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity293();
-	function addEntity294() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1296938, 34.6970412, 66.17);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(60);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt068',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity294();
-	function addEntity295() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1291593, 34.6966608, 69.01);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
-		var heading = Cesium.Math.toRadians(340);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'gdqssxt069',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity295();
-	function addEntity296() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1207006, 34.2557286, 62.51);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb01/jqbb01.gltf';
-		var heading = Cesium.Math.toRadians(329);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb006',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity296();
-	function addEntity297() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1204835, 34.255895, 65.87);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(340);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt035',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity297();
 	function addEntity298() {
 		var position = Cesium.Cartesian3.fromDegrees(114.1207446, 34.2557583, 61.5);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -4831,22 +4015,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity302();
-	function addEntity303() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1815703, 34.2224907, 56.65);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb01/jqbb01.gltf';
-		var heading = Cesium.Math.toRadians(124);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb007',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity303();
 	function addEntity304() {
 		var position = Cesium.Cartesian3.fromDegrees(114.181544, 34.2224472, 55.64);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -5151,54 +4319,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity322();
-	function addEntity323() {
-		var position = Cesium.Cartesian3.fromDegrees(114.1875193, 34.2187554, 54.28);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(307);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb011',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity323();
-	function addEntity324() {
-		var position = Cesium.Cartesian3.fromDegrees(114.2002701, 34.2122258, 60.62);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(310);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt044',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity324();
-	function addEntity325() {
-		var position = Cesium.Cartesian3.fromDegrees(114.211071, 34.2072035, 55.26);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(124);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb012',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity325();
 	function addEntity326() {
 		var position = Cesium.Cartesian3.fromDegrees(114.2255752, 34.1960793, 56);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -5455,214 +4575,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity341();
-	function addEntity342() {
-		var position = Cesium.Cartesian3.fromDegrees(114.2488015, 34.1693831, 60.19);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(350);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt045',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity342();
-	function addEntity343() {
-		var position = Cesium.Cartesian3.fromDegrees(114.2950992, 34.1010105, 55.03);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(310);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt046',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity343();
-	function addEntity344() {
-		var position = Cesium.Cartesian3.fromDegrees(114.2951814, 34.1010915, 55.03);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(130);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt047',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity344();
-	function addEntity345() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3001928, 34.0974388, 57.9);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(120);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt048',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity345();
-	function addEntity346() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3011588, 34.0970759, 58.02);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(300);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt049',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity346();
-	function addEntity347() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3116334, 34.0776484, 59.32);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(160);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt050',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity347();
-	function addEntity348() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3116924, 34.0768259, 52.19);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(0);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb013',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity348();
-	function addEntity349() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3119772, 34.0670138, 50.22);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(165);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt051',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity349();
-	function addEntity350() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3138082, 34.0667526, 46.34);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(55);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt052',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity350();
-	function addEntity351() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3136236, 34.0663246, 48.37);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(47);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt053',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity351();
-	function addEntity352() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3136579, 34.066297, 48.37);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(223);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt054',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity352();
-	function addEntity353() {
-		var position = Cesium.Cartesian3.fromDegrees(114.313748, 34.0662288, 48.37);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(223);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt055',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity353();
-	function addEntity354() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3127283, 34.055299, 46.12);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(176);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb014',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity354();
 	function addEntity355() {
 		var position = Cesium.Cartesian3.fromDegrees(114.3177418, 34.0372226, 48.28);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -5919,150 +4831,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity370();
-	function addEntity371() {
-		var position = Cesium.Cartesian3.fromDegrees(114.321192, 33.9877104, 52.33);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(10);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt056',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity371();
-	function addEntity372() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3213117, 33.9874326, 48.71);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb01/jqbb01.gltf';
-		var heading = Cesium.Math.toRadians(352);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb008',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity372();
-	function addEntity373() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3236186, 33.9790541, 55.17);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(330);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt057',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity373();
-	function addEntity374() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3251002, 33.974351, 55.5);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(350);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt058',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity374();
-	function addEntity375() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3417135, 33.9545004, 45.52);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(133);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb015',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity375();
-	function addEntity376() {
-		var position = Cesium.Cartesian3.fromDegrees(114.347813, 33.949901, 49.19);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb01/jqbb01.gltf';
-		var heading = Cesium.Math.toRadians(131);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'jqbb009',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity376();
-	function addEntity377() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3476956, 33.9498032, 48.19);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(311);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt059',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity377();
-	function addEntity378() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3478072, 33.9498879, 48.19);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(131);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt060',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity378();
-	function addEntity379() {
-		var position = Cesium.Cartesian3.fromDegrees(114.3844206, 33.8952618, 53.52);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(150);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt061',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity379();
 	function addEntity380() {
 		var position = Cesium.Cartesian3.fromDegrees(114.4110596, 33.8402979, 48.5);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -6319,166 +5087,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity395();
-	function addEntity396() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4176585, 33.8326135, 45.85);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb016',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity396();
-	function addEntity397() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4177623, 33.832623, 47.19);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(324);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt062',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity397();
-	function addEntity398() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4178405, 33.83267, 47.19);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(324);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt063',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity398();
-	function addEntity399() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4220836, 33.8274707, 42.91);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(325);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb017',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity399();
-	function addEntity400() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4254555, 33.8232005, 48.88);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(340);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt064',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity400();
-	function addEntity401() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4283798, 33.8217781, 47.41);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(97);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt065',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity401();
-	function addEntity402() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4283816, 33.821656, 47.66);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(85);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt066',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity402();
-	function addEntity403() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4283824, 33.8215942, 47.66);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(85);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt067',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity403();
-	function addEntity404() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4286812, 33.8214832, 46.84);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(64);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt068',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity404();
-	function addEntity405() {
-		var position = Cesium.Cartesian3.fromDegrees(114.432599, 33.8115106, 45.23);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(157);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb018',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity405();
 	function addEntity406() {
 		var position = Cesium.Cartesian3.fromDegrees(114.4570748, 33.7805905, 47.06);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -6735,118 +5343,6 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity421();
-	function addEntity422() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4615314, 33.7761786, 45.12);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(319);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb019',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity422();
-	function addEntity423() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4697104, 33.7661059, 52.31);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(315);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt069',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity423();
-	function addEntity424() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4669582, 33.7674749, 44.51);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(90);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt070',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity424();
-	function addEntity425() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4674308, 33.767282, 43.67);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(92);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt071',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity425();
-	function addEntity426() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4674305, 33.7672499, 43.67);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(272);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt072',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity426();
-	function addEntity427() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4674034, 33.767079, 44.5);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(290);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt073',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity427();
-	function addEntity428() {
-		var position = Cesium.Cartesian3.fromDegrees(114.4758099, 33.7564251, 44.95);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
-		var heading = Cesium.Math.toRadians(151);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'fxqbb020',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity428();
 	function addEntity429() {
 		var position = Cesium.Cartesian3.fromDegrees(114.4817005, 33.7446212, 45.7);
 		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/etcsxt/etcsxt.gltf';
@@ -7103,132 +5599,1636 @@ define(['cesium'], function (Cesium) {
 		});
 	}
 	addEntity444();
-	function addEntity445() {
-		var position = Cesium.Cartesian3.fromDegrees(114.5069362, 33.7183308, 48.51);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(115);
+	function addEntity30() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1224808, 34.7878387, 65.5);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(350);
 		var pitch = 0;
 		var roll = 0;
 		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
 		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 		var entity = viewer.entities.add({
-			name: 'cssxt074',
+			name: 'fxqbb001',
 			position: position,
 			orientation: orientation,
 			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
 		});
 	}
-	addEntity445();
-	function addEntity446() {
-		var position = Cesium.Cartesian3.fromDegrees(114.5080285, 33.7179329, 48.43);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(145);
+	addEntity30();
+	function addEntity31() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1248675, 34.7646228, 70.2);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(180);
 		var pitch = 0;
 		var roll = 0;
 		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
 		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 		var entity = viewer.entities.add({
-			name: 'cssxt075',
+			name: 'fxqbb002',
 			position: position,
 			orientation: orientation,
 			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
 		});
 	}
-	addEntity446();
-	function addEntity447() {
-		var position = Cesium.Cartesian3.fromDegrees(114.5414631, 33.6791145, 45.75);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/jqbb01/jqbb01.gltf';
+	addEntity31();
+	function addEntity44() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1208928, 34.7405, 68.8);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(23);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb003',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity44();
+	function addEntity59() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1201049, 34.7207928, 68.4);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(157);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb004',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity59();
+	function addEntity112() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1236543, 34.6407022, 67.58);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(9);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb005',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity112();
+	function addEntity115() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1184715, 34.6156338, 65.6);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(197);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb006',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity115();
+	function addEntity146() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0539131, 34.5185256, 75.27);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(36);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb007',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity146();
+	function addEntity171() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0454803, 34.4952085, 76.8);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(194);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb008',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity171();
+	function addEntity195() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0544656, 34.4394568, 73.88);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(328);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb009',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity195();
+	function addEntity197() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0644147, 34.4151042, 70.89);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(180);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb010',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity197();
+	function addEntity323() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1875193, 34.2187554, 54.28);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(307);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb011',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity323();
+	function addEntity325() {
+		var position = Cesium.Cartesian3.fromDegrees(114.211071, 34.2072035, 55.26);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(124);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb012',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity325();
+	function addEntity348() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3116924, 34.0768259, 52.19);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(0);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb013',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity348();
+	function addEntity354() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3127283, 34.055299, 46.12);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(176);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb014',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity354();
+	function addEntity375() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3417135, 33.9545004, 45.52);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(133);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb015',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity375();
+	function addEntity396() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4176585, 33.8326135, 45.85);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb016',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity396();
+	function addEntity399() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4220836, 33.8274707, 42.91);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb017',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity399();
+	function addEntity405() {
+		var position = Cesium.Cartesian3.fromDegrees(114.432599, 33.8115106, 45.23);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(157);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'fxqbb018',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity405();
+	function addEntity422() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4615314, 33.7761786, 45.12);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
 		var heading = Cesium.Math.toRadians(319);
 		var pitch = 0;
 		var roll = 0;
 		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
 		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 		var entity = viewer.entities.add({
-			name: 'jqbb010',
+			name: 'fxqbb019',
 			position: position,
 			orientation: orientation,
 			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
 		});
 	}
-	addEntity447();
-	function addEntity448() {
-		var position = Cesium.Cartesian3.fromDegrees(114.5416237, 33.678981, 44.1);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(320);
+	addEntity422();
+	function addEntity428() {
+		var position = Cesium.Cartesian3.fromDegrees(114.4758099, 33.7564251, 44.95);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/fxqbb/fxqbb.gltf';
+		var heading = Cesium.Math.toRadians(151);
 		var pitch = 0;
 		var roll = 0;
 		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
 		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 		var entity = viewer.entities.add({
-			name: 'cssxt076',
+			name: 'fxqbb020',
 			position: position,
 			orientation: orientation,
 			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
 		});
 	}
-	addEntity448();
-	function addEntity449() {
-		var position = Cesium.Cartesian3.fromDegrees(114.54171, 33.6790408, 44.1);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+	addEntity428();
+	function addEntity214() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1176767, 34.7305464, 69.85);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(160);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt001',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity214();
+	function addEntity216() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1176433, 34.7297417, 69.37);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(160);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt002',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity216();
+	function addEntity217() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1181192, 34.7297208, 69.44);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(340);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt003',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity217();
+	function addEntity218() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1173022, 34.7294714, 69.84);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(135);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt004',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity218();
+	function addEntity219() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1176035, 34.7286193, 69.69);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(160);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt005',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity219();
+	function addEntity220() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1180855, 34.7286098, 69.69);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(340);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt006',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity220();
+	function addEntity221() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1177011, 34.7274989, 69.57);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(160);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt007',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity221();
+	function addEntity222() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1181245, 34.7275042, 69.57);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(340);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt008',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity222();
+	function addEntity223() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1178741, 34.7263758, 68.84);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(155);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt009',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity223();
+	function addEntity224() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1182695, 34.7264229, 69.2);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(335);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt010',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity224();
+	function addEntity226() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1181167, 34.7252484, 68.46);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(155);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt011',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity226();
+	function addEntity227() {
+		var position = Cesium.Cartesian3.fromDegrees(114.118492, 34.7253, 68.46);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(330);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt012',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity227();
+	function addEntity228() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1183239, 34.7244186, 67.68);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(145);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt013',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity228();
+	function addEntity230() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1186982, 34.7244821, 67.68);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt014',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity230();
+	function addEntity231() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1186696, 34.7232997, 66.75);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(145);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt015',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity231();
+	function addEntity232() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1190291, 34.7233927, 66.78);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt016',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity232();
+	function addEntity233() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1190842, 34.7221944, 66.69);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
 		var heading = Cesium.Math.toRadians(140);
 		var pitch = 0;
 		var roll = 0;
 		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
 		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 		var entity = viewer.entities.add({
-			name: 'cssxt077',
+			name: 'gdqssxt017',
 			position: position,
 			orientation: orientation,
 			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
 		});
 	}
-	addEntity449();
-	function addEntity450() {
-		var position = Cesium.Cartesian3.fromDegrees(114.5485347, 33.6715907, 51.2);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(130);
-		var pitch = 0;
-		var roll = 0;
-		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
-		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
-		var entity = viewer.entities.add({
-			name: 'cssxt078',
-			position: position,
-			orientation: orientation,
-			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
-		});
-	}
-	addEntity450();
-	function addEntity451() {
-		var position = Cesium.Cartesian3.fromDegrees(114.5580955, 33.6616081, 43.27);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
+	addEntity233();
+	function addEntity235() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1194395, 34.7223007, 66.72);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
 		var heading = Cesium.Math.toRadians(320);
 		var pitch = 0;
 		var roll = 0;
 		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
 		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 		var entity = viewer.entities.add({
-			name: 'cssxt079',
+			name: 'gdqssxt018',
 			position: position,
 			orientation: orientation,
 			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
 		});
 	}
-	addEntity451();
-	function addEntity452() {
-		var position = Cesium.Cartesian3.fromDegrees(114.5583257, 33.6617065, 48.33);
-		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/cssxt/cssxt.gltf';
-		var heading = Cesium.Math.toRadians(305);
+	addEntity235();
+	function addEntity236() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1194383, 34.721386, 67.51);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(135);
 		var pitch = 0;
 		var roll = 0;
 		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
 		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
 		var entity = viewer.entities.add({
-			name: 'cssxt080',
+			name: 'gdqssxt019',
 			position: position,
 			orientation: orientation,
 			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
 		});
 	}
-	addEntity452();
+	addEntity236();
+	function addEntity237() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1198081, 34.7214566, 67.58);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(315);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt020',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity237();
+	function addEntity238() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1198646, 34.7205084, 68.94);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(135);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt021',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity238();
+	function addEntity239() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1202252, 34.7206024, 68.96);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(315);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt022',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity239();
+	function addEntity240() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1204735, 34.7194133, 70.5);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(135);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt023',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity240();
+	function addEntity241() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1208268, 34.7195208, 70.75);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(315);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt024',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity241();
+	function addEntity242() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1211755, 34.7182727, 71.35);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(130);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt025',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity242();
+	function addEntity243() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1215187, 34.7184001, 71.35);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(310);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt026',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity243();
+	function addEntity245() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1217105, 34.7174366, 71.57);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(130);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt027',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity245();
+	function addEntity246() {
+		var position = Cesium.Cartesian3.fromDegrees(114.122059, 34.7175561, 71.59);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(310);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt028',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity246();
+	function addEntity247() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1224139, 34.7163446, 71.77);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(130);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt029',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity247();
+	function addEntity248() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1227624, 34.7164641, 71.79);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(310);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt030',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity248();
+	function addEntity249() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1230401, 34.7153482, 71.92);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(130);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt031',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity249();
+	function addEntity250() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1233886, 34.7154677, 71.94);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(310);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt032',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity250();
+	function addEntity251() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1236203, 34.7143841, 71.52);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(130);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt033',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity251();
+	function addEntity253() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1239739, 34.7144898, 71.49);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(310);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt034',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity253();
+	function addEntity254() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1242353, 34.7132884, 70.12);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(135);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt035',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity254();
+	function addEntity257() {
+		var position = Cesium.Cartesian3.fromDegrees(114.124597, 34.713382, 70.07);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(315);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt036',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity257();
+	function addEntity258() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1246868, 34.7124312, 68.86);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(135);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt037',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity258();
+	function addEntity259() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1250484, 34.7125248, 68.81);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(315);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt038',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity259();
+	function addEntity260() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1251167, 34.7115654, 67.65);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(135);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt039',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity260();
+	function addEntity261() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1254784, 34.7116589, 67.6);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(315);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt040',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity261();
+	function addEntity262() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1256018, 34.710523, 67.21);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(140);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt041',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity262();
+	function addEntity263() {
+		var position = Cesium.Cartesian3.fromDegrees(114.125968, 34.7106006, 67.21);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(320);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt042',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity263();
+	function addEntity265() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1260796, 34.7093927, 67.75);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(140);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt043',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity265();
+	function addEntity266() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1264491, 34.709461, 67.7);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(320);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt044',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity266();
+	function addEntity267() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1265061, 34.7083034, 68.29);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(145);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt045',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity267();
+	function addEntity268() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1268757, 34.7083589, 68.29);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt046',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity268();
+	function addEntity269() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1268008, 34.7074746, 69.16);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(145);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt047',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity269();
+	function addEntity270() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1271735, 34.7075281, 69.11);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt048',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity270();
+	function addEntity271() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1271594, 34.7063742, 71.05);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(145);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt049',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity271();
+	function addEntity273() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1275367, 34.7064183, 71.08);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt050',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity273();
+	function addEntity274() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1274807, 34.7052448, 72.9);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(145);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt051',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity274();
+	function addEntity275() {
+		var position = Cesium.Cartesian3.fromDegrees(114.127863, 34.705295, 72.85);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt052',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity275();
+	function addEntity276() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1276452, 34.7042743, 74.06);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(150);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt053',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity276();
+	function addEntity277() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1281531, 34.7041812, 74.05);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt054',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity277();
+	function addEntity278() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1280253, 34.7030345, 74.95);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(150);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt055',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity278();
+	function addEntity279() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1284098, 34.703064, 74.94);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(325);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt056',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity279();
+	function addEntity280() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1281911, 34.7022162, 74.87);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(150);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt057',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity280();
+	function addEntity282() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1285667, 34.702247, 74.89);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(330);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt058',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity282();
+	function addEntity284() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1284241, 34.7008247, 74.37);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(155);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt059',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity284();
+	function addEntity285() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1287957, 34.7008573, 74.37);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(330);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt060',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity285();
+	function addEntity286() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1285652, 34.6997159, 73.41);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(155);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt061',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity286();
+	function addEntity287() {
+		var position = Cesium.Cartesian3.fromDegrees(114.128987, 34.6997273, 73.37);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(335);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt062',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity287();
+	function addEntity288() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1286514, 34.6988883, 72.46);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(155);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt063',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity288();
+	function addEntity289() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1290683, 34.6988952, 72.44);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(335);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt064',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity289();
+	function addEntity290() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1284525, 34.6980889, 69.7);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(135);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt065',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity290();
+	function addEntity291() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1287317, 34.697784, 70.58);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(155);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt066',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity291();
+	function addEntity293() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1292043, 34.6977825, 70.56);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(335);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt067',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity293();
+	function addEntity294() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1296938, 34.6970412, 66.17);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(60);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt068',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity294();
+	function addEntity295() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1291593, 34.6966608, 69.01);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/gdqssxt/gdqssxt.gltf';
+		var heading = Cesium.Math.toRadians(340);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'gdqssxt069',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity295();
+	function addEntity229() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1183265, 34.7244145, 67.35);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/hmbld/hmbld.gltf';
+		var heading = Cesium.Math.toRadians(75);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'hmbld001',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity229();
+	function addEntity255() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1242387, 34.7132848, 69.78);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/hmbld/hmbld.gltf';
+		var heading = Cesium.Math.toRadians(65);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'hmbld002',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity255();
+	function addEntity281() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1281933, 34.7022121, 74.53);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/hmbld/hmbld.gltf';
+		var heading = Cesium.Math.toRadians(80);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'hmbld003',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity281();
+	function addEntity29() {
+		var position = Cesium.Cartesian3.fromDegrees(114.120304, 34.830007, 75.16);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb.gltf';
+		var heading = Cesium.Math.toRadians(176);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb001',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity29();
+	function addEntity62() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1277054, 34.6856631, 71.38);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb.gltf';
+		var heading = Cesium.Math.toRadians(191);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb002',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity62();
+	function addEntity65() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1246115, 34.7127652, 71.85);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb.gltf';
+		var heading = Cesium.Math.toRadians(336);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb003',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity65();
+	function addEntity175() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0410101, 34.4698093, 91.82);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb.gltf';
+		var heading = Cesium.Math.toRadians(346);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb004',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity175();
+	function addEntity196() {
+		var position = Cesium.Cartesian3.fromDegrees(114.0564171, 34.4371595, 76.51);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb01.gltf';
+		var heading = Cesium.Math.toRadians(149);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb005',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity196();
+	function addEntity296() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1207006, 34.2557286, 62.51);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb01.gltf';
+		var heading = Cesium.Math.toRadians(329);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb006',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity296();
+	function addEntity303() {
+		var position = Cesium.Cartesian3.fromDegrees(114.1815703, 34.2224907, 56.65);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb01.gltf';
+		var heading = Cesium.Math.toRadians(124);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb007',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity303();
+	function addEntity372() {
+		var position = Cesium.Cartesian3.fromDegrees(114.3213117, 33.9874326, 48.71);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb01.gltf';
+		var heading = Cesium.Math.toRadians(352);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb008',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity372();
+	function addEntity376() {
+		var position = Cesium.Cartesian3.fromDegrees(114.347813, 33.949901, 49.19);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb01.gltf';
+		var heading = Cesium.Math.toRadians(131);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb009',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity376();
+	function addEntity447() {
+		var position = Cesium.Cartesian3.fromDegrees(114.5414631, 33.6791145, 45.75);
+		var url = 'http://172.16.100.126:8888/jxgs_3dtiles/dth/mjqbb/mjqbb01.gltf';
+		var heading = Cesium.Math.toRadians(319);
+		var pitch = 0;
+		var roll = 0;
+		var hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
+		var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, hpr);
+		var entity = viewer.entities.add({
+			name: 'mjqbb010',
+			position: position,
+			orientation: orientation,
+			model: { uri: url, minimumPixelSize: 128, maximumScale: 1 },
+		});
+	}
+	addEntity447();
 });
