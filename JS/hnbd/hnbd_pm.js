@@ -1,5 +1,6 @@
 define(['cesium', 'jquery'], function (Cesium, $) {
-	$('#jixigaosu').on('click', function () {
+	$('#jixigaosu').on('click', addJxgsProject);
+	function addJxgsProject() {
 		viewer.scene.camera.flyTo({
 			destination: new Cesium.Rectangle.fromDegrees(113.449663, 33.539802, 115.00249, 34.908563),
 		});
@@ -65,5 +66,5 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 			0
 		);
 		require(['loaddth']);
-	});
+	}
 });

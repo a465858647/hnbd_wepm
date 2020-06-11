@@ -29,8 +29,6 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js'], function ($) {
 				if (oDiv.offsetLeft < end) {
 					oDiv.style.left = oDiv.offsetLeft + speed + 'px';
 				}
-				console.log('oDiv.offsetLeft结果是：' + oDiv.offsetLeft);
-				console.log('end是：' + end);
 			}
 		}, 30);
 	}
@@ -41,6 +39,9 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js'], function ($) {
 			autoCheckTrigger: true, //true / false 分别表示 触发 / 不触发 事件回调函数
 			chkStyle: 'checkbox', //勾选框类型(checkbox 或 radio）
 			chkboxType: { Y: 'p', N: 's' }, //勾选 checkbox 对于父子节点的关联关系
+		},
+		callback: {
+			onCheck: zTreeOnCheck,
 		},
 	};
 	var zNodes = [
@@ -55,8 +56,16 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js'], function ($) {
 		},
 		{ name: '地形', open: true, icon: '/img/layer/layers.png', children: [{ name: 'Cesium', icon: '/img/layer/dixing.png' }] },
 		{ name: '标注', open: true, icon: '/img/layer/layers.png', children: [{ name: '二维地名', icon: '/img/layer/label.png' }] },
-		{ name: '项目', open: true, icon: '/img/layer/layers.png', children: [{ name: '机西高速项目', icon: '/img/layer/project.png' }] },
+		{
+			name: '项目',
+			open: true,
+			icon: '/img/layer/layers.png',
+			children: [{ name: '机西高速项目', icon: '/img/layer/project.png', tId: 'project_jsgs' }],
+		},
 	];
+	function zTreeOnCheck(event, treeId, treeNode) {
+	
+	}
 	$(document).ready(function () {
 		zTreeObj = $.fn.zTree.init($('#treeDemo'), setting, zNodes);
 	});
