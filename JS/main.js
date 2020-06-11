@@ -8,7 +8,7 @@ require.config({
 		layers: 'hnbd/hnbd_layers',
 		pm: 'hnbd/hnbd_pm',
 		loaddth: 'hnbd/hnbd_pm_loaddth',
-		// tianditu: '../node_modules/cesium-tdt/dist/cesiumTdt',
+		layersTool: 'hnbd/hnbd_layersTool',
 	},
 });
 var viewer;
@@ -21,3 +21,4 @@ require(['jquery'], function () {
 require(['initmap']);
 require(['layers']);
 require(['pm']);
+require(['layersTool']);

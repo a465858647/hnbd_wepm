@@ -1,0 +1,52 @@
+.layersToolDiv {
+	width: 200px;
+	height: 320px;
+	position: absolute;
+	right: -180px;
+	top: 180px;
+	margin: 0;
+	padding: 0;
+}
+.layerToolContent {
+	width: 180px;
+	height: 320px;
+	display: inline-block;
+	opacity: 0.5;
+	border: 1px solid #96c2f1;
+	background: #eefaff;
+	position: absolute;
+	left: 20px;
+	margin: 0;
+  padding: 0;
+  
+}
+.style1 {
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	width: 180px;
+	height: 320px;
+	margin: 0;
+	padding: 0;
+}
+.flagshow {
+	display: inline-block;
+	width: 17px;
+	border-top: 3px solid rgb(252, 9, 9);
+	border-bottom: 3px solid rgb(252, 9, 9);
+	top: 39%;
+	left: 0;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+.flagshow span {
+	font-size: 10px;
+	float: left;
+	margin-left: 02px;
+	line-height: 1.42857143;
+	color: #337ab7;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}

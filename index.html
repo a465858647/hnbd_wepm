@@ -7,14 +7,14 @@
 		<script data-main="js/main.js" src="JS/require.js"></script>
 		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
 		<link rel="stylesheet" href="node_modules/Cesium/Widgets/widgets.css" />
-		<!--                 设置导航条                         -->
+		<link rel="stylesheet" href="css/layersTool.css" />
+		<link rel="stylesheet" href="css/ztree/zTreeStyle/zTreeStyle.css" />
 		<style>
 			.compass {
 				position: absolute;
 				left: 0;
 				top: 10px;
 			}
-
 			.navigation-controls {
 				position: absolute;
 				left: 30px;
@@ -99,15 +99,22 @@
 								<button type="submit" class="btn btn-default">搜索</button>
 							</form>
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#" id="cesium3DLayers">图层</a></li>
+								<li>
+									<a href="#" id="cesium3DLayers" class="menu-trigger right">图层</a>
+								</li>
 							</ul>
 						</div>
-						<!-- /.navbar-collapse -->
 					</div>
-					<!-- /.container-fluid -->
 				</nav>
 			</div>
 			<div class="row" id="cesiumdiv" style="margin-top: -20px;"></div>
+			<div class="layersToolDiv" id="div1">
+				<div class="flagshow">
+					<span>图层管理器</span>
+				</div>
+				<div class="layerToolContent"></div>
+				<ul id="treeDemo" class="ztree style1"></ul>
+			</div>
 		</div>
 	</body>
 </html>

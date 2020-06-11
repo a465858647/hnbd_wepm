@@ -35,7 +35,7 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 		);
 		var tileset4 = viewer.scene.primitives.add(
 			new Cesium.Cesium3DTileset({
-				url: 'http://172.16.100.126:8888/jxgs_3dtiles/jx-K100-150/', //数据路径
+				url: 'http://172.16.100.126:8888/jxgs_3dtiles/jx-K100-150/tileset.json', //数据路径
 				maximumScreenSpaceError: 2, //最大的屏幕空间误差
 				maximumNumberOfLoadedTiles: 100, //最大加载瓦片个数
 				skipLevelOfDetail: true,
@@ -51,7 +51,7 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 
 		var tileset2 = viewer.scene.primitives.add(
 			new Cesium.Cesium3DTileset({
-				url: 'http://172.16.100.126:8888/jxgs_qxsy/tileset.json', //数据路径
+				url: 'http://172.16.100.126:8888/jxgs_qxsy02/tileset.json', //数据路径
 				maximumScreenSpaceError: 2, //最大的屏幕空间误差
 				maximumNumberOfLoadedTiles: 100, //最大加载瓦片个数
 				skipLevelOfDetail: true,
