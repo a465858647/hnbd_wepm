@@ -17,8 +17,7 @@
 	position: absolute;
 	left: 20px;
 	margin: 0;
-  padding: 0;
-  
+	padding: 0;
 }
 .style1 {
 	position: absolute;
@@ -49,4 +48,7 @@
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
+}
+body::-webkit-scrollbar {
+	display: none;
 }

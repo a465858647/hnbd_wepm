@@ -1,4 +1,4 @@
-define(['jquery', 'js/ztree/jquery.ztree.core.js', 'js/ztree/jquery.ztree.excheck.js', 'js/ztree/jquery.ztree.exedit.js'], function ($) {
+define(['jquery', 'js/ztree/jquery.ztree.all.min.js'], function ($) {
 	var oDiv = document.getElementById('div1');
 	var oDiv2 = document.getElementById('cesiumdiv');
 	var timer;
@@ -6,7 +6,7 @@ define(['jquery', 'js/ztree/jquery.ztree.core.js', 'js/ztree/jquery.ztree.exchec
 		startMove(oDiv2.offsetWidth - oDiv.offsetWidth);
 	};
 	oDiv.onmouseout = function () {
-		startMove(oDiv2.offsetWidth - 40);
+		startMove(oDiv2.offsetWidth - 20);
 	};
 	function startMove(end) {
 		clearInterval(timer);
@@ -19,7 +19,6 @@ define(['jquery', 'js/ztree/jquery.ztree.core.js', 'js/ztree/jquery.ztree.exchec
 				}
 				if (oDiv.offsetLeft > end) {
 					oDiv.style.left = oDiv.offsetLeft + speed + 'px';
-			
 				}
 			}
 			if (oDiv.offsetLeft < end) {
@@ -29,7 +28,6 @@ define(['jquery', 'js/ztree/jquery.ztree.core.js', 'js/ztree/jquery.ztree.exchec
 				}
 				if (oDiv.offsetLeft < end) {
 					oDiv.style.left = oDiv.offsetLeft + speed + 'px';
-			
 				}
 				console.log('oDiv.offsetLeft结果是：' + oDiv.offsetLeft);
 				console.log('end是：' + end);
@@ -37,10 +35,27 @@ define(['jquery', 'js/ztree/jquery.ztree.core.js', 'js/ztree/jquery.ztree.exchec
 		}, 30);
 	}
 	var zTreeObj;
-	var setting = {};
+	var setting = {
+		check: {
+			enable: true, //true / false 分别表示 显示 / 不显示 复选框或单选框
+			autoCheckTrigger: true, //true / false 分别表示 触发 / 不触发 事件回调函数
+			chkStyle: 'checkbox', //勾选框类型(checkbox 或 radio）
+			chkboxType: { Y: 'p', N: 's' }, //勾选 checkbox 对于父子节点的关联关系
+		},
+	};
 	var zNodes = [
-		{ name: 'test1', open: true, children: [{ name: 'test1_1' }, { name: 'test1_2' }] },
-		{ name: 'test2', open: true, children: [{ name: 'test2_1' }, { name: 'test2_2' }] },
+		{
+			name: '影像',
+			open: true,
+			icon: '/img/layer/layers.png',
+			children: [
+				{ name: '谷歌', icon: '/img/layer/image.png' },
+				{ name: '高德', icon: '/img/layer/image.png' },
+			],
+		},
+		{ name: '地形', open: true, icon: '/img/layer/layers.png', children: [{ name: 'Cesium', icon: '/img/layer/dixing.png' }] },
+		{ name: '标注', open: true, icon: '/img/layer/layers.png', children: [{ name: '二维地名', icon: '/img/layer/label.png' }] },
+		{ name: '项目', open: true, icon: '/img/layer/layers.png', children: [{ name: '机西高速项目', icon: '/img/layer/project.png' }] },
 	];
 	$(document).ready(function () {
 		zTreeObj = $.fn.zTree.init($('#treeDemo'), setting, zNodes);
