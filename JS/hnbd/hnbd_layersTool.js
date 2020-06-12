@@ -52,7 +52,7 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'cesium'], function ($, z,
 			open: true,
 			icon: '/img/layer/layers.png',
 			children: [
-				{ name: '谷歌', icon: '/img/layer/image.png' },
+				{ name: '谷歌', icon: '/img/layer/image.png'},
 				{ name: '高德', icon: '/img/layer/image.png' },
 			],
 		},

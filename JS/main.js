@@ -21,6 +21,11 @@ require(['jquery'], function () {
 	$(document).ready(function () {
 		require(['layersTool'], function (layersTool) {
 			ztreeObj = layersTool.initZtree();
+			/*初始化谷歌地图*/
+			viewer.imageryLayers.removeAll();
+			var googleIamgeNode = ztreeObj.getNodeByParam('name', '谷歌', null);
+			var flag = googleIamgeNode.checked;
+			ztreeObj.checkNode(googleIamgeNode, !flag, true, true);
 		});
 	});
 });

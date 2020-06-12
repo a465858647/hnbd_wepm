@@ -48,19 +48,7 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 	});
 	// 显示FPS
 	viewer.scene.debugShowFramesPerSecond = true;
-	/*初始化谷歌地图*/
-	viewer.imageryLayers.removeAll();
-	var guge = new Cesium.ImageryLayer(
-		new Cesium.UrlTemplateImageryProvider({
-			url: 'http://www.google.cn/maps/vt?lyrs=s@800&x={x}&y={y}&z={z}',
-			tilingScheme: new Cesium.WebMercatorTilingScheme(),
-			minimumLevel: 1,
-			maximumLevel: 20,
-			credit: 'http://www.beidou-hn.com/',
-		}),
-		{ show: true }
-	);
-	viewer.imageryLayers.add(guge);
+
 	/*            工具管理             */
 	$(function () {
 		$('#toolBox #measureDistance').on('click', function (handler) {
