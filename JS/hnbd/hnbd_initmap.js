@@ -9,7 +9,17 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 			height: window.innerHeight || document.body.clientHeight,
 		};
 		oMap.style.height = size.height - oNavbar.offsetHeight + 20 + 'px';
+		// 设置无滚动条
+		document.documentElement ? (document.documentElement.style.overflow = 'hidden') : (document.body.style.overflow = 'hidden');
+		// 重新加载css
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = '/css/layersTool.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
 	};
+	// 设置无滚动条
+	document.documentElement ? (document.documentElement.style.overflow = 'hidden') : (document.body.style.overflow = 'hidden');
 	Cesium.Ion.defaultAccessToken =
 		'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZDFlN2QyNi05NTMyLTRkZjMtYjM3Ni1iZTQzY2M1NGVhNjAiLCJpZCI6Mjg2NjUsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1OTEzMjY3MDJ9.h-nWrkKCjr308Y1iOz28f26eogyP6ZPfgfo1pny_vl0';
 	/*窗体初始化*/
@@ -34,7 +44,7 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 		navigationHelpButton: false, //帮助图标
 		sceneModePicker: false,
 		// vrButton: true,
-		infoBox: true,//设置为false信息窗口将不再弹出
+		infoBox: true, //设置为false信息窗口将不再弹出
 	});
 	// 显示FPS
 	viewer.scene.debugShowFramesPerSecond = true;

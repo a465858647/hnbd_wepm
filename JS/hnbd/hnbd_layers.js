@@ -2,50 +2,24 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 	/*            图层管理             */
 	$('#imageLayer li').on('click', function () {
 		if (/googleIamge/gi.test($(this).html())) {
-			viewer.imageryLayers.removeAll();
-			var guge = new Cesium.ImageryLayer(
-				new Cesium.UrlTemplateImageryProvider({
-					url: 'http://www.google.cn/maps/vt?lyrs=s@800&x={x}&y={y}&z={z}',
-					tilingScheme: new Cesium.WebMercatorTilingScheme(),
-					minimumLevel: 1,
-					maximumLevel: 20,
-					credit: 'http://www.beidou-hn.com/',
-				}),
-				{ show: true }
-			);
-			viewer.imageryLayers.add(guge);
+			var googleIamgeNode = ztreeObj.getNodeByParam('name', '谷歌', null);
+			var flag = googleIamgeNode.checked;
+			ztreeObj.checkNode(googleIamgeNode, !flag, true, true);
 		}
 		if (/gaodeIamge/gi.test($(this).html())) {
-			viewer.imageryLayers.removeAll();
-			var guge = new Cesium.ImageryLayer(
-				new Cesium.UrlTemplateImageryProvider({
-					url: 'https://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
-				}),
-				{ show: true }
-			);
-			viewer.imageryLayers.add(guge);
+			var gaodeIamgeNode = ztreeObj.getNodeByParam('name', '高德', null);
+			var flag = gaodeIamgeNode.checked;
+			ztreeObj.checkNode(gaodeIamgeNode, !flag, true, true);
 		}
 		if (/tdtImageLable/gi.test($(this).html())) {
-			var guge = new Cesium.ImageryLayer(
-				new Cesium.UrlTemplateImageryProvider({
-					url: '//t3.tianditu.com/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=' + token,
-					layer: 'cia',
-					style: 'default',
-					tileMatrixSetID: 'w',
-					format: 'tiles',
-					maximumLevel: 18,
-				}),
-				{ show: true }
-			);
-			viewer.imageryLayers.add(guge);
+			var labelnameNode = ztreeObj.getNodeByParam('name', '二维地名', null);
+			var flag = labelnameNode.checked;
+			ztreeObj.checkNode(labelnameNode, !flag, true, true);
 		}
 		if (/tiandituTerrain/gi.test($(this).html())) {
-			var terrainProvider = Cesium.createWorldTerrain({
-				requestVertexNormals: true,
-			});
-			viewer.terrainProvider = terrainProvider;
-			viewer.scene.globe.enableLighting = true;
-			// viewer.scene.globe.depthTestAgainstTerrain = true;
+			var terrainNode = ztreeObj.getNodeByParam('name', 'Cesium', null);
+			var flag = terrainNode.checked;
+			ztreeObj.checkNode(terrainNode, !flag, true, true);
 		}
 	});
 	$('#removeAllImage').on('click', function () {
