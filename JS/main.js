@@ -3,12 +3,13 @@ require.config({
 	paths: {
 		jquery: 'jquery/jquery-3.5.1',
 		bootstrap: 'bootstrap.min',
-		cesium: '../node_modules/Cesium/Cesium',
+		Cesium: 'Cesium',
 		initmap: 'hnbd/hnbd_initmap',
 		layers: 'hnbd/hnbd_layers',
 		pm: 'hnbd/hnbd_pm',
 		loaddth: 'hnbd/hnbd_pm_loaddth',
 		layersTool: 'hnbd/hnbd_layersTool',
+		CesiumNavigation: 'CesiumNavigation',
 	},
 });
 var viewer;

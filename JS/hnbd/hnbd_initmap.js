@@ -1,4 +1,4 @@
-define(['cesium', 'jquery'], function (Cesium, $) {
+define(['Cesium/Cesium', 'jquery'], function (Cesium, $) {
 	window.onresize = function onresize() {
 		/*窗体初始化*/
 		var ocontainerFluid = document.getElementById('container-fluid');
@@ -58,15 +58,18 @@ define(['cesium', 'jquery'], function (Cesium, $) {
 			measureAreaSpace(viewer, handler);
 		});
 	});
-	// //导航栏
-
-	// require(['../node_modules/cesium-navigation/navigation.js','cesium'], function (viewerCesiumNavigationMixin,Cesium) {
-	// 	options.enableCompass = true; //罗盘
-	// 	options.enableZoomControls = false; //缩放
-	// 	options.enableDistanceLegend = false; //比例尺
-	// 	options.enableCompassOuterRing = true; //指南针外环
-	// 	viewer.extend(viewerCesiumNavigationMixin.viewerCesiumNavigationMixin, options);
-	// });
+	// 导航栏;
+	require(['Cesium/Cesium', 'CesiumNavigation/viewerCesiumNavigationMixin'], function (Cesium, viewerCesiumNavigationMixin) {
+		console.log(viewerCesiumNavigationMixin);
+		viewerCesiumNavigationMixin(viewer);
+		var options = {};
+		options.defaultResetView = Cesium.Rectangle.fromDegrees(71, 3, 90, 14);
+		options.enableCompass = true;
+		options.enableZoomControls = false;
+		options.enableDistanceLegend = false;
+		options.enableCompassOuterRing = true;
+		viewer.extend(Cesium.viewerCesiumNavigationMixin, options);
+	});
 
 	//控制视角不转到地下
 	$(function () {

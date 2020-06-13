@@ -1,4 +1,4 @@
-define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'cesium'], function ($, z, Cesium) {
+define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'cesium/Cesium'], function ($, z, Cesium) {
 	var oDiv = document.getElementById('div1');
 	var oDiv2 = document.getElementById('cesiumdiv');
 	var timer;

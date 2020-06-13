@@ -1,4 +1,4 @@
-define(['cesium', 'jquery'], function (Cesium, $) {
+define(['cesium/Cesium', 'jquery'], function (Cesium, $) {
 	/*            图层管理             */
 	$('#imageLayer li').on('click', function () {
 		if (/googleIamge/gi.test($(this).html())) {
