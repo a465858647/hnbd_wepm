@@ -29,6 +29,8 @@ require(['jquery'], function () {
 			var googleIamgeNode = ztreeObj.getNodeByParam('name', '谷歌', null);
 			var flag = googleIamgeNode.checked;
 			ztreeObj.checkNode(googleIamgeNode, !flag, true, true);
+			$('#tooBar').prop('display', 'block');
+			document.getElementById('tooBar').style.visibility = 'visible';
 		});
 	});
 });

@@ -54,6 +54,7 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		// vrButton: true,
 		infoBox: false, //设置为false信息窗口将不再弹出
 	});
+
 	/*            工具管理             */
 	$(function () {
 		$('#toolBox #measureDistance').on('click', function (handler) {
