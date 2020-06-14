@@ -15,9 +15,6 @@
 				right: 60px;
 				bottom: -20px;
 			}
-			.cesium-viewer-fullscreenContainer {
-				display: none;
-			}
 		</style>
 	</head>
 	<body>
@@ -97,32 +94,52 @@
 							</form>
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a
-										href="#"
-										id="cesium3DLayers"
-										class="menu-trigger right"
-										data-container="body"
-										data-toggle="popover"
-										data-html="true"
-										data-placement="bottom"
-										title="图层管理器"
-										data-content="<ul id='treeDemo' class='ztree style1'></ul>"
-										>图层</a
-									>
+									<!-- <a href="#" id="cesium3DLayers" class="menu-trigger right" title="图层管理器">图层</a> -->
 								</li>
 							</ul>
 						</div>
 					</div>
 				</nav>
 			</div>
-			<div class="row" id="cesiumdiv" style="margin-top: -20px;"></div>
-			<div class="layersToolDiv" id="div1">
-				<div class="flagshow">
-					<span>图层管理器</span>
+			<!-- toolBar -->
+			<div
+				id="tooBar"
+				style="position: absolute; right: 90px; padding: 5px; width: 140px; background-color: rgb(253, 253, 250); z-index: 99999;"
+			>
+				<div class="dropdown" style="display: inline-block;">
+					<a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="./img/toolBar/layers.png" alt="" />
+						图层
+						<span class="caret"></span>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dLabel" style="height: 180px; width: 190px;">
+						<ul id="treeDemo" class="ztree style1"></ul>
+					</div>
 				</div>
-				<div class="layerToolContent"></div>
-				<ul id="treeDemo" class="ztree style1"></ul>
+				<div class="dropdown" style="display: inline-block;">
+					<a id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="./img/toolBar/celiang.png" alt="" />
+						测量
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="dLabe2">
+						<li id="DISTtool">
+							<a href="#" style="width: auto; white-space: nowrap;"><img src="./img/toolBar/juli.png" alt="" /> 距离</a>
+						</li>
+						<li>
+							<a href="#"> <img src="./img/toolBar/mianji.png" alt="" /> 面积</a>
+						</li>
+						<li>
+							<a href="#"> <img src="./img/toolBar/zuobiao.png" alt="" /> 坐标</a>
+						</li>
+						<li>
+							<a href="#"> <img src="./img/toolBar/qingchu.png" alt="" /> 清除结果</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+			<div class="row" id="cesiumdiv" style="margin-top: -20px;"></div>
 		</div>
+		<div id="toolTip" style="display: none; position: absolute; height: 20px; width: 127px; background: olive; top: 0px; left: 0px;"></div>
 	</body>
 </html>

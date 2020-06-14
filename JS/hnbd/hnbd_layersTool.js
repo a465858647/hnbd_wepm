@@ -1,38 +1,7 @@
 define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z, Cesium) {
-	var oDiv = document.getElementById('div1');
-	var oDiv2 = document.getElementById('cesiumdiv');
-	var timer;
-	oDiv.onmouseover = function () {
-		startMove(oDiv2.offsetWidth - oDiv.offsetWidth);
-	};
-	oDiv.onmouseout = function () {
-		startMove(oDiv2.offsetWidth - 20);
-	};
-	function startMove(end) {
-		clearInterval(timer);
-		timer = setInterval(function () {
-			var speed = 0;
-			if (oDiv.offsetLeft > end) {
-				speed = -10;
-				if (oDiv.offsetLeft <= end) {
-					clearInterval(timer);
-				}
-				if (oDiv.offsetLeft > end) {
-					oDiv.style.left = oDiv.offsetLeft + speed + 'px';
-				}
-			}
-			if (oDiv.offsetLeft < end) {
-				speed = 10;
-				if (oDiv.offsetLeft >= end) {
-					clearInterval(timer);
-				}
-				if (oDiv.offsetLeft < end) {
-					oDiv.style.left = oDiv.offsetLeft + speed + 'px';
-				}
-			}
-		}, 30);
-	}
-
+	$('#treeDemo').on('click', function () {
+		event.stopPropagation();
+	});
 	var zTreeObj;
 	var setting = {
 		check: {

@@ -20,7 +20,6 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		//重新设置导航栏
 		var compassDIv = document.getElementsByClassName('compass');
 		var navigationDIV = document.getElementsByClassName('navigation-controls');
-		console.log(compassDIv);
 		compassDIv[0].style.top = oMap.clientHeight - 200 + 'px';
 		navigationDIV[0].style.top = oMap.clientHeight - 100 + 'px';
 		compassDIv[0].style.left = oMap.clientWidth - 90 + 'px';
@@ -50,11 +49,11 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		geocoder: false, //地址搜索控件
 		navigationHelpButton: false, //帮助图标
 		sceneModePicker: false,
+		homeButton: false,
+		fullscreenButton: false,
 		// vrButton: true,
-		infoBox: true, //设置为false信息窗口将不再弹出
+		infoBox: false, //设置为false信息窗口将不再弹出
 	});
-	// 显示FPS
-	viewer.scene.debugShowFramesPerSecond = true;
 	/*            工具管理             */
 	$(function () {
 		$('#toolBox #measureDistance').on('click', function (handler) {
@@ -74,8 +73,6 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		navigationDIV[0].style.top = oMap.clientHeight - 100 + 'px';
 		compassDIv[0].style.left = oMap.clientWidth - 90 + 'px';
 		navigationDIV[0].style.left = oMap.clientWidth - 58 + 'px';
-    var fullscreenDiv = document.getElementsByClassName('cesium-viewer-fullscreenContainer');
-    fullscreenDiv[0].style.display='none'
 	});
 
 	//控制视角不转到地下

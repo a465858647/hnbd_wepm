@@ -10,6 +10,7 @@ require.config({
 		loaddth: 'hnbd/hnbd_pm_loaddth',
 		layersTool: 'hnbd/hnbd_layersTool',
 		CesiumNavigation: 'CesiumNavigation',
+		toolbox: 'hnbd/hnbd_toolBox',
 	},
 });
 var viewer;
@@ -19,6 +20,7 @@ var subdomains = ['0', '1', '2', '3', '4', '5', '6', '7'];
 var ztreeObj;
 require(['jquery'], function () {
 	require(['bootstrap'], function () {
+		$('.dropdown-menu').dropdown();
 	});
 	$(document).ready(function () {
 		require(['layersTool'], function (layersTool) {
@@ -33,3 +35,4 @@ require(['jquery'], function () {
 require(['initmap']);
 require(['layers']);
 require(['pm']);
+require(['toolbox']);
