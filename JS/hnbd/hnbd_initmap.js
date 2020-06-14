@@ -1,4 +1,4 @@
-define(['Cesium/Cesium', 'jquery'], function (Cesium, $) {
+define(['Cesium', 'jquery'], function (Cesium, $) {
 	window.onresize = function onresize() {
 		/*窗体初始化*/
 		var ocontainerFluid = document.getElementById('container-fluid');
@@ -20,8 +20,7 @@ define(['Cesium/Cesium', 'jquery'], function (Cesium, $) {
 	};
 	// 设置无滚动条
 	document.documentElement ? (document.documentElement.style.overflow = 'hidden') : (document.body.style.overflow = 'hidden');
-	Cesium.Ion.defaultAccessToken =
-		'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZDFlN2QyNi05NTMyLTRkZjMtYjM3Ni1iZTQzY2M1NGVhNjAiLCJpZCI6Mjg2NjUsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1OTEzMjY3MDJ9.h-nWrkKCjr308Y1iOz28f26eogyP6ZPfgfo1pny_vl0';
+
 	/*窗体初始化*/
 	var ocontainerFluid = document.getElementById('container-fluid');
 	var oNavbar = document.getElementById('nav');
@@ -31,9 +30,10 @@ define(['Cesium/Cesium', 'jquery'], function (Cesium, $) {
 		height: window.innerHeight || document.body.clientHeight,
 	};
 	oMap.style.height = size.height - oNavbar.offsetHeight + 20 + 'px';
-
 	/*cesium 初始化*/
 	//设置默认视点,需要在设置viewer之先设置
+	Cesium.Ion.defaultAccessToken =
+		'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlZDFlN2QyNi05NTMyLTRkZjMtYjM3Ni1iZTQzY2M1NGVhNjAiLCJpZCI6Mjg2NjUsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1OTEzMjY3MDJ9.h-nWrkKCjr308Y1iOz28f26eogyP6ZPfgfo1pny_vl0';
 	var china = Cesium.Rectangle.fromDegrees(100, 10, 120, 70);
 	Cesium.Camera.DEFAULT_VIEW_RECTANGLE = china;
 	viewer = new Cesium.Viewer('cesiumdiv', {
@@ -48,7 +48,6 @@ define(['Cesium/Cesium', 'jquery'], function (Cesium, $) {
 	});
 	// 显示FPS
 	viewer.scene.debugShowFramesPerSecond = true;
-
 	/*            工具管理             */
 	$(function () {
 		$('#toolBox #measureDistance').on('click', function (handler) {
@@ -59,18 +58,9 @@ define(['Cesium/Cesium', 'jquery'], function (Cesium, $) {
 		});
 	});
 	// 导航栏;
-	require(['Cesium/Cesium', 'CesiumNavigation/viewerCesiumNavigationMixin'], function (Cesium, viewerCesiumNavigationMixin) {
-		console.log(viewerCesiumNavigationMixin);
+	require(['CesiumNavigation/viewerCesiumNavigationMixin'], function (viewerCesiumNavigationMixin) {
 		viewerCesiumNavigationMixin(viewer);
-		var options = {};
-		options.defaultResetView = Cesium.Rectangle.fromDegrees(71, 3, 90, 14);
-		options.enableCompass = true;
-		options.enableZoomControls = false;
-		options.enableDistanceLegend = false;
-		options.enableCompassOuterRing = true;
-		viewer.extend(Cesium.viewerCesiumNavigationMixin, options);
 	});
-
 	//控制视角不转到地下
 	$(function () {
 		$('.cesium-credit-logoContainer').remove();

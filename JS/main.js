@@ -3,7 +3,7 @@ require.config({
 	paths: {
 		jquery: 'jquery/jquery-3.5.1',
 		bootstrap: 'bootstrap.min',
-		Cesium: 'Cesium',
+		Cesium: 'Cesium/Cesium',
 		initmap: 'hnbd/hnbd_initmap',
 		layers: 'hnbd/hnbd_layers',
 		pm: 'hnbd/hnbd_pm',
@@ -11,6 +11,11 @@ require.config({
 		layersTool: 'hnbd/hnbd_layersTool',
 		CesiumNavigation: 'CesiumNavigation',
 	},
+	// shim: {
+	// 	Cesium: {
+	// 		exports: 'Cesium',
+	// 	},
+	// },
 });
 var viewer;
 var token = '958ae533fdcf1d8f7677f7c9f711a4cc';
