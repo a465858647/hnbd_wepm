@@ -17,10 +17,17 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		link.type = 'text/css';
 		link.href = '/css/layersTool.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
+		//重新设置导航栏
+		var compassDIv = document.getElementsByClassName('compass');
+		var navigationDIV = document.getElementsByClassName('navigation-controls');
+		console.log(compassDIv);
+		compassDIv[0].style.top = oMap.clientHeight - 200 + 'px';
+		navigationDIV[0].style.top = oMap.clientHeight - 100 + 'px';
+		compassDIv[0].style.left = oMap.clientWidth - 90 + 'px';
+		navigationDIV[0].style.left = oMap.clientWidth - 58 + 'px';
 	};
 	// 设置无滚动条
 	document.documentElement ? (document.documentElement.style.overflow = 'hidden') : (document.body.style.overflow = 'hidden');
-
 	/*窗体初始化*/
 	var ocontainerFluid = document.getElementById('container-fluid');
 	var oNavbar = document.getElementById('nav');
@@ -60,7 +67,17 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 	// 导航栏;
 	require(['CesiumNavigation/viewerCesiumNavigationMixin'], function (viewerCesiumNavigationMixin) {
 		viewerCesiumNavigationMixin(viewer);
+		//重新设置导航栏
+		var compassDIv = document.getElementsByClassName('compass');
+		var navigationDIV = document.getElementsByClassName('navigation-controls');
+		compassDIv[0].style.top = oMap.clientHeight - 200 + 'px';
+		navigationDIV[0].style.top = oMap.clientHeight - 100 + 'px';
+		compassDIv[0].style.left = oMap.clientWidth - 90 + 'px';
+		navigationDIV[0].style.left = oMap.clientWidth - 58 + 'px';
+    var fullscreenDiv = document.getElementsByClassName('cesium-viewer-fullscreenContainer');
+    fullscreenDiv[0].style.display='none'
 	});
+
 	//控制视角不转到地下
 	$(function () {
 		$('.cesium-credit-logoContainer').remove();

@@ -4,23 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>河南北斗三维展示平台</title>
-		<script data-main="js/main.js" src="JS/require.js" ></script>
+		<script data-main="js/main.js" src="JS/require.js"></script>
 		<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
 		<link rel="stylesheet" href="js/Cesium/Widgets/widgets.css" />
 		<link rel="stylesheet" href="css/layersTool.css" />
 		<link rel="stylesheet" href="css/ztree/zTreeStyle/zTreeStyle.css" />
 		<style>
-			/* .compass {
+			#distanceLegendDiv {
 				position: absolute;
-				left: 0;
-				top: 10px;
+				right: 60px;
+				bottom: -20px;
 			}
-			.navigation-controls {
-				position: absolute;
-				left: 30px;
-				top: 120px;
-				height: 90px;
-			} */
+			.cesium-viewer-fullscreenContainer {
+				display: none;
+			}
 		</style>
 	</head>
 	<body>
@@ -100,7 +97,18 @@
 							</form>
 							<ul class="nav navbar-nav navbar-right">
 								<li>
-									<a href="#" id="cesium3DLayers" class="menu-trigger right">图层</a>
+									<a
+										href="#"
+										id="cesium3DLayers"
+										class="menu-trigger right"
+										data-container="body"
+										data-toggle="popover"
+										data-html="true"
+										data-placement="bottom"
+										title="图层管理器"
+										data-content="<ul id='treeDemo' class='ztree style1'></ul>"
+										>图层</a
+									>
 								</li>
 							</ul>
 						</div>

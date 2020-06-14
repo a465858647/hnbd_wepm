@@ -11,11 +11,6 @@ require.config({
 		layersTool: 'hnbd/hnbd_layersTool',
 		CesiumNavigation: 'CesiumNavigation',
 	},
-	// shim: {
-	// 	Cesium: {
-	// 		exports: 'Cesium',
-	// 	},
-	// },
 });
 var viewer;
 var token = '958ae533fdcf1d8f7677f7c9f711a4cc';
@@ -23,11 +18,11 @@ var tdtUrl = 'https://t{s}.tianditu.gov.cn/';
 var subdomains = ['0', '1', '2', '3', '4', '5', '6', '7'];
 var ztreeObj;
 require(['jquery'], function () {
-	require(['bootstrap'], function () {});
+	require(['bootstrap'], function () {
+	});
 	$(document).ready(function () {
 		require(['layersTool'], function (layersTool) {
 			ztreeObj = layersTool.initZtree();
-			/*初始化谷歌地图*/
 			viewer.imageryLayers.removeAll();
 			var googleIamgeNode = ztreeObj.getNodeByParam('name', '谷歌', null);
 			var flag = googleIamgeNode.checked;
