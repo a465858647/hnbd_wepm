@@ -76,7 +76,7 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		navigationDIV[0].style.left = oMap.clientWidth - 58 + 'px';
 	});
 
-	//控制视角不转到地下
+	//移除原视图控件
 	$(function () {
 		$('.cesium-credit-logoContainer').remove();
 		$('.cesium-credit-expand-link').remove();

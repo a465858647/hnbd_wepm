@@ -132,11 +132,11 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 		}
 		if (treeNode.name == 'Cesium' && treeNode.checked == true) {
 			terrainProvider = Cesium.createWorldTerrain({
-				requestVertexNormals: true,
-				requestWaterMask: true,
+				// requestVertexNormals: true,
+				// requestWaterMask: true,
 			});
 			viewer.terrainProvider = terrainProvider;
-			viewer.scene.globe.enableLighting = true;
+			// viewer.scene.globe.enableLighting = true;
 			viewer.scene.globe.depthTestAgainstTerrain = true;
 		} else if (treeNode.name == 'Cesium' && treeNode.checked == false) {
 			terrainProvider = new Cesium.EllipsoidTerrainProvider({});
