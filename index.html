@@ -15,6 +15,9 @@
 				right: 60px;
 				bottom: -20px;
 			}
+			.cesium-viewer-bottom .cesium-widget-credits {
+				display: none;
+			}
 		</style>
 	</head>
 	<body>
@@ -36,7 +39,10 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="#">河南北斗</a>
+							<a class="navbar-brand" href="#" style="padding: 5px;">
+								<img src="./img/logo/logo.png" style="width: 150px; height: auto;" />
+								<!-- 河南北斗 -->
+							</a>
 						</div>
 
 						<!-- Collect the nav links, forms, and other content for toggling -->
@@ -149,6 +155,17 @@
 				</div>
 			</div>
 			<div class="row" id="cesiumdiv" style="margin-top: -20px;"></div>
+			<div id="latlng_show" style="width: 340px; height: 10px; position: absolute; bottom: 10px; left: 0px; z-index: 1; font-size: 15px;">
+				<div style="width: 100px; height: 10px; float: left;">
+					<font size="2" color="white">经度：<span id="longitude_show"></span></font>
+				</div>
+				<div style="width: 100px; height: 10px; float: left;">
+					<font size="2" color="white">纬度：<span id="latitude_show"></span></font>
+				</div>
+				<div style="width: 140px; height: 10px; float: left;">
+					<font size="2" color="white">视角高：<span id="altitude_show"></span>km</font>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

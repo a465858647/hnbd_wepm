@@ -84,4 +84,27 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 			"<div class='cesium-credit-logoContainer' style='display: inline;'><div style='display: inline;'><a href='http://www.beidou-hn.com/' target='_blank'><img title='Cesium ion' src='img/logo/logo.png' height='35px'></a></div></div>";
 		$('.cesium-widget-credits').html(hnbd_widget);
 	});
+	// <!-- 经纬度实时显示 -->
+	var longitude_show = document.getElementById('longitude_show');
+	var latitude_show = document.getElementById('latitude_show');
+	var altitude_show = document.getElementById('altitude_show');
+	var canvas = viewer.scene.canvas;
+	//具体事件的实现
+	var ellipsoid = viewer.scene.globe.ellipsoid;
+	var handler = new Cesium.ScreenSpaceEventHandler(canvas);
+	handler.setInputAction(function (movement) {
+		//捕获椭球体，将笛卡尔二维平面坐标转为椭球体的笛卡尔三维坐标，返回球体表面的点
+		var cartesian = viewer.camera.pickEllipsoid(movement.endPosition, ellipsoid);
+		if (cartesian) {
+			//将笛卡尔三维坐标转为地图坐标（弧度）
+			var cartographic = viewer.scene.globe.ellipsoid.cartesianToCartographic(cartesian);
+			//将地图坐标（弧度）转为十进制的度数
+			var lat_String = Cesium.Math.toDegrees(cartographic.latitude).toFixed(4);
+			var log_String = Cesium.Math.toDegrees(cartographic.longitude).toFixed(4);
+			var alti_String = (viewer.camera.positionCartographic.height / 1000).toFixed(2);
+			longitude_show.innerHTML = log_String;
+			latitude_show.innerHTML = lat_String;
+			altitude_show.innerHTML = alti_String;
+		}
+	}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 });
