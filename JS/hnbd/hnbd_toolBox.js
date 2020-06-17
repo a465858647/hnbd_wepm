@@ -122,7 +122,7 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		var entityArr = [];
 		function measureLineSpace(viewer, handler) {
 			// 取消双击事件-追踪该位置
-			 //viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+			viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 			var positions = [];
 			var poly = null;
 			var distance = 0;
@@ -174,13 +174,14 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 						verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
 					},
 				});
-				entityArr.push(floatingPoint);
+				entityArr.push(viewer.entities.getById('DistanceLabel' + labelID));
 				labelID = labelID + 1;
 			}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
 			handler.setInputAction(function (movement) {
 				handler.destroy(); //关闭事件句柄
 				positions.pop(); //最后一个点无效
+				console.log(entityArr);
 				// handler2.setInputAction(function (movement) {
 				// 	if (entityArr.length > 0) {
 				// 		for (var i = 0; i < entityArr.length; i++) {
@@ -188,7 +189,7 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 				// 		}
 				// 		handler2.destroy();
 				// 	}
-				// }, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
+				// }, Cesium.ScreenSpaceEventType.RIGHT_DOUBLE_CLICK);
 			}, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
 
 			var PolyLinePrimitive = (function () {
@@ -216,6 +217,7 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 					//实时更新polyline.positions
 					this.options.polyline.positions = new Cesium.CallbackProperty(_update, false);
 					viewer.entities.add(this.options);
+
 					entityArr.push(this.options);
 				};
 
