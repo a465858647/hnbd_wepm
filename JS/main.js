@@ -27,7 +27,7 @@ require(['jquery'], function () {
 		require(['layersTool'], function (layersTool) {
 			ztreeObj = layersTool.initZtree();
 			viewer.imageryLayers.removeAll();
-			var googleIamgeNode = ztreeObj.getNodeByParam('name', '谷歌', null);
+			var googleIamgeNode = ztreeObj.getNodeByParam('name', '谷歌影像', null);
 			var flag = googleIamgeNode.checked;
 			ztreeObj.checkNode(googleIamgeNode, !flag, true, true);
 			$('#tooBar').prop('display', 'block');

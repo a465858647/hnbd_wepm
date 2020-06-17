@@ -21,12 +21,28 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 			open: true,
 			icon: '/img/layer/layers.png',
 			children: [
-				{ name: '谷歌', icon: '/img/layer/image.png' },
-				{ name: '高德', icon: '/img/layer/image.png' },
+				{ name: '谷歌影像', icon: '/img/layer/image.png' },
+				{ name: '天地图影像', icon: '/img/layer/image.png' },
 			],
 		},
-		{ name: '地形', open: true, icon: '/img/layer/layers.png', children: [{ name: 'Cesium', icon: '/img/layer/dixing.png' }] },
-		{ name: '标注', open: true, icon: '/img/layer/layers.png', children: [{ name: '二维地名', icon: '/img/layer/label.png' }] },
+		{
+			name: '地形',
+			open: true,
+			icon: '/img/layer/layers.png',
+			children: [{ name: 'Cesium', icon: '/img/layer/dixing.png' }],
+		},
+		{
+			name: '标注',
+			open: true,
+			icon: '/img/layer/layers.png',
+			children: [{ name: '二维地名', icon: '/img/layer/label.png' }],
+		},
+		{
+			name: '街道',
+			open: true,
+			icon: '/img/layer/layers.png',
+			children: [{ name: '天地图街道', icon: '/img/layer/gaodeditu.png' }],
+		},
 		{
 			name: '项目',
 			open: true,
@@ -37,8 +53,13 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 	var jxgsPrimitives = new Cesium.PrimitiveCollection();
 	var nameLabel;
 	var terrainProvider;
+	var tdtterrainLabel;
 	var googleIamge;
 	var gaodeIamge;
+	var tdtImage;
+	var tdtImageLabel;
+	var tdtStreet;
+	var tdtStreetLabel;
 	function zTreeOnCheck(event, treeId, treeNode) {
 		if (treeNode.name == '机西高速项目' && treeNode.checked == true) {
 			var tileset = viewer.scene.primitives.add(
@@ -130,19 +151,30 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 		} else if (treeNode.name == '二维地名' && treeNode.checked == false) {
 			viewer.imageryLayers.remove(nameLabel);
 		}
+		if (treeNode.name == '天地图影像' && treeNode.checked == true) {
+			tdtImage = addTdtLayer(viewer, 'img', token);
+			// tdtImageLabel = addTdtLayer(viewer, 'cia', token);
+		} else if (treeNode.name == '天地图影像' && treeNode.checked == false) {
+			viewer.imageryLayers.remove(tdtImage);
+			// viewer.imageryLayers.remove(tdtImageLabel);
+		}
+		if (treeNode.name == '天地图街道' && treeNode.checked == true) {
+			tdtStreet = addTdtLayer(viewer, 'vec', token);
+			tdtStreetLabel = addTdtLayer(viewer, 'cva', token);
+		} else if (treeNode.name == '天地图街道' && treeNode.checked == false) {
+			viewer.imageryLayers.remove(tdtStreet);
+			viewer.imageryLayers.remove(tdtStreetLabel);
+		}
 		if (treeNode.name == 'Cesium' && treeNode.checked == true) {
-			terrainProvider = Cesium.createWorldTerrain({
-				// requestVertexNormals: true,
-				// requestWaterMask: true,
-			});
+			terrainProvider = Cesium.createWorldTerrain({});
 			viewer.terrainProvider = terrainProvider;
-			// viewer.scene.globe.enableLighting = true;
 			viewer.scene.globe.depthTestAgainstTerrain = true;
 		} else if (treeNode.name == 'Cesium' && treeNode.checked == false) {
 			terrainProvider = new Cesium.EllipsoidTerrainProvider({});
 			viewer.scene.terrainProvider = terrainProvider;
+			// viewer.imageryLayers.remove(tdtterrainLabel);
 		}
-		if (treeNode.name == '谷歌' && treeNode.checked == true) {
+		if (treeNode.name == '谷歌影像' && treeNode.checked == true) {
 			googleIamge = new Cesium.ImageryLayer(
 				new Cesium.UrlTemplateImageryProvider({
 					url: 'http://www.google.cn/maps/vt?lyrs=s@800&x={x}&y={y}&z={z}',
@@ -154,7 +186,7 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 				{ show: true }
 			);
 			viewer.imageryLayers.add(googleIamge);
-		} else if (treeNode.name == '谷歌' && treeNode.checked == false) {
+		} else if (treeNode.name == '谷歌影像' && treeNode.checked == false) {
 			viewer.imageryLayers.remove(googleIamge);
 		}
 		if (treeNode.name == '高德' && treeNode.checked == true) {
@@ -179,6 +211,28 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 	function initZtree() {
 		zTreeObj = $.fn.zTree.init($('#treeDemo'), setting, zNodes);
 		return zTreeObj;
+	}
+	function addTdtLayer(viewer, layerTag, token) {
+		var key = '&tk=' + token;
+		var baseUrl =
+			'.tianditu.gov.cn/' +
+			layerTag +
+			'_w' +
+			'/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=' +
+			layerTag +
+			'&STYLE=default&TILEMATRIXSET=w&FORMAT=tiles';
+		var urlTemplate =
+			'http://t' + Math.round(Math.random() * 7) + baseUrl + '&TILECOL=' + '{x}' + '&TILEROW=' + '{y}' + '&TILEMATRIX=' + '{z}' + key;
+		// if ((layerTag = 'img')) {
+		var layerProvider = new Cesium.ImageryLayer(
+			new Cesium.UrlTemplateImageryProvider({
+				url: urlTemplate,
+			}),
+			{ show: true }
+		);
+		viewer.imageryLayers.add(layerProvider);
+		return layerProvider;
+		// }
 	}
 	return {
 		initZtree: initZtree,

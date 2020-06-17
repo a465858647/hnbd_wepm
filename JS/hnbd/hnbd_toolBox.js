@@ -1,10 +1,10 @@
 define(['Cesium', 'jquery'], function (Cesium, $) {
 	$('#surveyCoordinate').on('click', function (event) {
-		surveyCoordinate(event);
-		deleteCoordinateLabel(event);
-	});
-	function surveyCoordinate(event) {
 		var handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
+		surveyCoordinate(event, handler);
+		deleteCoordinateLabel(event, handler);
+	});
+	function surveyCoordinate(event, handler) {
 		if (Cesium.defined(viewer.terrainProvider.availability)) {
 			//todo：在显示地形情况下点击创建点
 
@@ -104,9 +104,9 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		// 	}
 		// }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 	}
-	function deleteCoordinateLabel(event) {
-		var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+	function deleteCoordinateLabel(event, handler) {
 		handler.setInputAction(function (event) {
+			handler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_CLICK);
 			var pick = viewer.scene.pick(event.position);
 			if (Cesium.defined(pick) && RegExp(/CoordinateLabel/).test(pick.id.id)) {
 				var selectEntity = viewer.entities.getById(pick.id.id);
@@ -115,19 +115,14 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		}, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
 	}
 	$('#surveyDistance').on('click', function (event) {
-		// surveyDistance(event);
-		// deleteDistanceLabel(event);
-		// function surveyDistance(event) {
-		//   var handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
-		// }
-		// function deleteDistanceLabel(event) {}
 		//测量空间直线距离
 		/******************************************* */
 		var handler = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
+		var handler2 = new Cesium.ScreenSpaceEventHandler(viewer.canvas);
+		var entityArr = [];
 		function measureLineSpace(viewer, handler) {
 			// 取消双击事件-追踪该位置
-			viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
-			// handler = new Cesium.ScreenSpaceEventHandler(viewer.scene._imageryLayerCollection);
+			 //viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
 			var positions = [];
 			var poly = null;
 			var distance = 0;
@@ -136,73 +131,76 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 			handler.setInputAction(function (movement) {
 				let ray = viewer.camera.getPickRay(movement.endPosition);
 				cartesian = viewer.scene.globe.pick(ray, viewer.scene);
-				//cartesian = viewer.scene.camera.pickEllipsoid(movement.endPosition, viewer.scene.globe.ellipsoid);
 				if (positions.length >= 2) {
 					if (!Cesium.defined(poly)) {
 						poly = new PolyLinePrimitive(positions);
 					} else {
 						positions.pop();
-						// cartesian.y += (1 + Math.random());
 						positions.push(cartesian);
 					}
 					distance = getSpaceDistance(positions);
-					// console.log("distance: " + distance);
-					// tooltip.innerHTML='<p>'+distance+'米</p>';
 				}
 			}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
 			handler.setInputAction(function (movement) {
-				// tooltip.style.display = "none";
-				// cartesian = viewer.scene.camera.pickEllipsoid(movement.position, viewer.scene.globe.ellipsoid);
-				// cartesian = viewer.scene.pickPosition(movement.position);
 				let ray = viewer.camera.getPickRay(movement.position);
 				cartesian = viewer.scene.globe.pick(ray, viewer.scene);
 				if (positions.length == 0) {
 					positions.push(cartesian.clone());
 				}
 				positions.push(cartesian);
-				//在三维场景中添加Label
-				//   var cartographic = Cesium.Cartographic.fromCartesian(cartesian);
 				var textDisance = distance + '米';
-				// console.log(textDisance + ",lng:" + cartographic.longitude/Math.PI*180.0);
 				floatingPoint = viewer.entities.add({
+					id: 'DistanceLabel' + labelID,
 					name: '空间直线距离',
-					// position: Cesium.Cartesian3.fromDegrees(cartographic.longitude / Math.PI * 180, cartographic.latitude / Math.PI * 180,cartographic.height),
 					position: positions[positions.length - 1],
 					point: {
-						pixelSize: 5,
+						pixelSize: 2,
 						color: Cesium.Color.RED,
 						outlineColor: Cesium.Color.WHITE,
-						outlineWidth: 2,
+						outlineWidth: 1,
 					},
 					label: {
 						text: textDisance,
-						font: '18px sans-serif',
-						fillColor: Cesium.Color.GOLD,
+						font: '12px Monospace ',
+						fillColor: Cesium.Color.BLACK,
 						style: Cesium.LabelStyle.FILL_AND_OUTLINE,
 						outlineWidth: 2,
 						verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-						pixelOffset: new Cesium.Cartesian2(20, -20),
+						// pixelOffset: new Cesium.Cartesian2(20, -20),
+						showBackground: true,
+						backgroundColor: Cesium.Color.ALICEBLUE,
+						horizontalOrigin: Cesium.HorizontalOrigin.LEFT,
+						verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
 					},
 				});
+				entityArr.push(floatingPoint);
+				labelID = labelID + 1;
 			}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
 			handler.setInputAction(function (movement) {
 				handler.destroy(); //关闭事件句柄
 				positions.pop(); //最后一个点无效
-				// viewer.entities.remove(floatingPoint);
-				// tooltip.style.display = "none";
+				// handler2.setInputAction(function (movement) {
+				// 	if (entityArr.length > 0) {
+				// 		for (var i = 0; i < entityArr.length; i++) {
+				// 			viewer.entities.remove(entityArr[i]);
+				// 		}
+				// 		handler2.destroy();
+				// 	}
+				// }, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
 			}, Cesium.ScreenSpaceEventType.RIGHT_CLICK);
 
 			var PolyLinePrimitive = (function () {
 				function _(positions) {
 					this.options = {
+						id: 'DistanceLabel',
 						name: '直线',
 						polyline: {
 							show: true,
 							positions: [],
-							material: Cesium.Color.CHARTREUSE,
-							width: 10,
+							material: new Cesium.PolylineDashMaterialProperty({ color: Cesium.Color.RED }),
+							width: 1,
 							clampToGround: true,
 						},
 					};
@@ -218,6 +216,7 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 					//实时更新polyline.positions
 					this.options.polyline.positions = new Cesium.CallbackProperty(_update, false);
 					viewer.entities.add(this.options);
+					entityArr.push(this.options);
 				};
 
 				return _;
