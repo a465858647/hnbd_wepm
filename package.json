@@ -1,6 +1,6 @@
 {
 	"name": "hnbd_wepm",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"description": "hnbd_wepm",
 	"main": "main.js",
 	"dependencies": {
