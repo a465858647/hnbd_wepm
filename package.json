@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "hnbd_wepm",
 	"main": "main.js",
-	"dependencies": {},
+	"dependencies": {
+		"@types/cesium": "^1.67.10"
+	},
 	"devDependencies": {},
 	"scripts": {
 		"test": "start"
