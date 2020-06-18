@@ -1,28 +1,24 @@
 {
-  "name": "hnbd_wepm",
-  "version": "1.0.0",
-  "description": "hnbd_wepm",
-  "main": "main.js",
-  "dependencies": {
-    "cesium-navigation": "^1.0.0",
-    "cesium-tdt": "^1.1.0",
-    "require-less": "0.0.7"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/a465858647/hnbd_wepm.git"
-  },
-  "keywords": [
-    "hnbd_wepm"
-  ],
-  "author": "kdx",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/a465858647/hnbd_wepm/issues"
-  },
-  "homepage": "https://github.com/a465858647/hnbd_wepm#readme"
+	"name": "hnbd_wepm",
+	"version": "1.0.0",
+	"description": "hnbd_wepm",
+	"main": "main.js",
+	"dependencies": {},
+	"devDependencies": {},
+	"scripts": {
+		"test": "start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/a465858647/hnbd_wepm.git"
+	},
+	"keywords": [
+		"hnbd_wepm"
+	],
+	"author": "kdx",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/a465858647/hnbd_wepm/issues"
+	},
+	"homepage": "https://github.com/a465858647/hnbd_wepm#readme"
 }
