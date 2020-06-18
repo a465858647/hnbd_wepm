@@ -20,5 +20,6 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 	});
 	$('#removeAllImage').on('click', function () {
 		viewer.imageryLayers.removeAll();
-	});
+  });
+  
 });
