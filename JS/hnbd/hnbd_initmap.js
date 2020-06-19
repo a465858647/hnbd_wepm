@@ -107,4 +107,6 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 			altitude_show.innerHTML = alti_String;
 		}
 	}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
+	
 });

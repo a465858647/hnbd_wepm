@@ -129,6 +129,12 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 			require(['loaddth', 'Cesium'], function (dth) {
 				dth.loadDth();
 			});
+			console.log(tileset2);
+			// var tem = viewer.scene.primitives;
+			// for (var i = 0; i < tem.length; i++) {
+			// 	var tem2 = tem.get(i);
+			// 	console.log(tem2.children);
+			// }
 		} else if (treeNode.name == '机西高速项目' && treeNode.checked == false) {
 			jxgsPrimitives.removeAll();
 			require(['loaddth', 'Cesium'], function (dth) {
