@@ -52,7 +52,7 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 		homeButton: false,
 		fullscreenButton: false,
 		// vrButton: true,
-		infoBox: false, //设置为false信息窗口将不再弹出
+		infoBox: true, //设置为false信息窗口将不再弹出
 	});
 
 	/*            工具管理             */
@@ -107,6 +107,4 @@ define(['Cesium', 'jquery'], function (Cesium, $) {
 			altitude_show.innerHTML = alti_String;
 		}
 	}, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
-
-	
 });

@@ -64,7 +64,7 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 		if (treeNode.name == '机西高速项目' && treeNode.checked == true) {
 			var tileset = viewer.scene.primitives.add(
 				new Cesium.Cesium3DTileset({
-					url: 'http://172.16.100.118:8888/jxgs_3dtiles/jx-K0-50/tileset.json', //数据路径
+					url: 'http://127.0.0.1:8888/jxgs_3dtiles/jx-K0-50/tileset.json', //数据路径
 					maximumScreenSpaceError: 2, //最大的屏幕空间误差
 					maximumNumberOfLoadedTiles: 100, //最大加载瓦片个数
 					skipLevelOfDetail: true,
@@ -80,7 +80,7 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 			jxgsPrimitives.add(tileset);
 			var tileset3 = viewer.scene.primitives.add(
 				new Cesium.Cesium3DTileset({
-					url: 'http://172.16.100.118:8888/jxgs_3dtiles/jx-K50-100/tileset.json', //数据路径
+					url: 'http://127.0.0.1:8888/jxgs_3dtiles/jx-K50-100/tileset.json', //数据路径
 					maximumScreenSpaceError: 2, //最大的屏幕空间误差
 					maximumNumberOfLoadedTiles: 100, //最大加载瓦片个数
 					skipLevelOfDetail: true,
@@ -96,7 +96,7 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 			jxgsPrimitives.add(tileset3);
 			var tileset4 = viewer.scene.primitives.add(
 				new Cesium.Cesium3DTileset({
-					url: 'http://172.16.100.118:8888/jxgs_3dtiles/jx-K100-150/tileset.json', //数据路径
+					url: 'http://127.0.0.1:8888/jxgs_3dtiles/jx-K100-150/tileset.json', //数据路径
 					maximumScreenSpaceError: 2, //最大的屏幕空间误差
 					maximumNumberOfLoadedTiles: 100, //最大加载瓦片个数
 					skipLevelOfDetail: true,
@@ -112,7 +112,7 @@ define(['jquery', 'js/ztree/jquery.ztree.all.min.js', 'Cesium'], function ($, z,
 			jxgsPrimitives.add(tileset4);
 			var tileset2 = viewer.scene.primitives.add(
 				new Cesium.Cesium3DTileset({
-					url: 'http://172.16.100.118:8888/jxgs_qxsy02/tileset.json', //数据路径
+					url: 'http://127.0.0.1:8888/jxgs_qxsy02/tileset.json', //数据路径
 					maximumScreenSpaceError: 2, //最大的屏幕空间误差
 					maximumNumberOfLoadedTiles: 100, //最大加载瓦片个数
 					skipLevelOfDetail: true,
